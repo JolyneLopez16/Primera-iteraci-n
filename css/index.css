@@ -1,0 +1,236 @@
+/* Incio Seccion Header */
+
+.color1 {
+    color: #003735;
+}
+
+.color2 {
+    color: #005241;
+}
+
+.color3 {
+    color: #2c794f;
+}
+
+.color4 {
+    color: #6dab5d;
+}
+
+.color5 {
+    color: #c7e76d;
+}
+
+.color6 {
+    color: #000c1c;
+}
+
+.color7 {
+    color: #003753;
+}
+
+.color8 {
+    color: #006b97;
+}
+
+.color9 {
+    color: #00aae7;
+}
+
+.color10 {
+    color: #00f4ff;
+}
+
+#sct-header {
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.img-header-box {
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+}
+
+#sct-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.flex-col p {
+    text-align: center;
+    line-height: 1.5;
+    margin: 1px 50px;
+}
+
+.btn-registro {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #003735;
+}
+
+.btn-registro:hover {
+    background-color: #6dab5d;
+    cursor: pointer;
+}
+
+.btn-registro span {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* Termina Seccion Header */
+
+
+/* Inicio Seccion Oportunidades */
+
+#sct-oportunidades {
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.flex-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-box {
+    width: 400px;
+    height: 200px;
+    box-shadow: 0px 5px 8px 0px rgba(112, 102, 112, 0.9);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.img-box div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.346);
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c7e76d;
+}
+
+li {
+    list-style: inside;
+}
+
+.img-box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img-box h3 {
+    color: #dee8f0;
+    font-weight: bold;
+}
+
+.img-box:nth-child(1) {
+    background-image: url('/img/peso.png');
+    background-size: cover;
+}
+
+.img-box:nth-child(2) {
+    background-image: url('/img/ayuno.png');
+    background-size: contain;
+}
+
+.img-box:nth-child(3) {
+    background-image: url('/img/actividad-fisica.png');
+    background-size: cover;
+}
+
+#sct-final {
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.content-box {
+    line-height: 2;
+    width: 70%;
+    height: 60%;
+    background-color: #003735;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box li {
+    margin: 10px;
+}
+
+.img-final-box {
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 70%;
+    background-image: url('/img/recomendaciones.png');
+    background-size: cover;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.img-final-box a {
+    color: #dee8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.346);
+    border-radius: 10px;
+}
+
+.img-final-box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

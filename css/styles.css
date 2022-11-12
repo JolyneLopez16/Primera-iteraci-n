@@ -1,5 +1,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(237, 234, 234);
 }
 
 body section {
@@ -23,6 +24,7 @@ h3 {
 
 p {
     font-size: 13pt;
+    font-weight: 500;
 }
 
 
@@ -36,6 +38,7 @@ p {
     width: 100%;
     overflow: hidden;
     height: 7vh;
+    padding: 0 30px;
 }
 
 .nav-links {
