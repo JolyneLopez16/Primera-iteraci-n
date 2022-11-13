@@ -1,3 +1,12 @@
+#nav-links-mobile {
+    display: none;
+}
+
+.nav-icon {
+    display: none;
+}
+
+
 /* Incio Seccion Header */
 
 #sct-header {
@@ -139,6 +148,12 @@ li {
     background-size: cover;
 }
 
+
+/* Final Seccion de Oportunidades */
+
+
+/* Inicio de seccion Final */
+
 #sct-final {
     height: 50vh;
     width: 80%;
@@ -193,4 +208,193 @@ li {
 .img-final-box:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+
+/* Final de Seccion Final */
+
+
+/* Responsive Tablet */
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    #sct-header {
+        margin: 0 auto;
+        height: 40vh;
+    }
+    #sct-header img {
+        border-radius: 5px;
+    }
+    #sct-oportunidades {
+        margin: 0 auto;
+        height: 35vh;
+    }
+    h1 {
+        text-align: center;
+        font-size: 26pt;
+    }
+    p {
+        font-size: 10pt;
+    }
+    h2 {
+        font-size: 20pt;
+        text-align: center;
+    }
+    h3 {
+        font-size: 16pt;
+    }
+    .btn-registro {
+        width: 200px;
+    }
+    .btn-registro span {
+        font-size: 13pt;
+    }
+    .img-box {
+        width: 180px;
+        height: 150px;
+        border-radius: 5px;
+    }
+    .img-box div {
+        border-radius: 5px;
+    }
+    #sct-final {
+        height: 30vh;
+    }
+    .content-box {
+        width: 300px;
+    }
+    .content-box a {
+        font-size: 10pt;
+    }
+    .img-final-box {
+        width: 250px;
+    }
+    .img-final-box h2 {
+        font-size: 15pt;
+    }
+}
+
+
+/* Final Tablet */
+
+
+/* Inicio Responsive Mobile */
+
+@media screen and (max-width:767px) {
+    h1 {
+        font-size: 15pt;
+        text-align: center;
+    }
+    h2 {
+        font-size: 13pt;
+        text-align: center;
+    }
+    p {
+        font-size: 8pt;
+    }
+    .img-header-box {
+        display: none;
+    }
+    body {
+        margin: 0;
+    }
+    header {
+        width: 100%;
+    }
+    .navbar {
+        padding: 0;
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    .nav-icon {
+        display: block;
+        position: relative;
+        left: 370px;
+        top: -48px;
+    }
+    .fa-xl {
+        font-size: 2em !important;
+    }
+    .mobile-nav {
+        display: block;
+        overflow: hidden;
+        background-color: #003735;
+        position: relative;
+    }
+    .mobile-nav #nav-links-mobile {
+        display: none;
+    }
+    .mobile-nav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+    .mobile-nav a.nav-icono {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .mobile-nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    #sct-header {
+        height: 35vh;
+    }
+    .flex-col {
+        width: 100%;
+    }
+    .btn-registro {
+        width: 120px;
+    }
+    .btn-registro span {
+        font-size: 10pt;
+    }
+    #sct-oportunidades {
+        padding: 0;
+        margin: 0 auto;
+        height: 20vh;
+    }
+    .flex-row {
+        justify-content: space-between;
+    }
+    .img-box {
+        width: 100px;
+        height: 70px;
+        margin: 0 5px 5px 0;
+    }
+    .img-box h3 {
+        font-size: 7pt;
+    }
+    #sct-final {
+        margin: 0 auto;
+        padding: 0;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .content-box {
+        background: none;
+    }
+    .content-box a {
+        color: #6dab5d;
+        font-size: 6pt;
+        line-height: 1;
+    }
+    .content-box li {
+        margin: 0;
+    }
+    .img-final-box {
+        width: 100%;
+    }
 }
