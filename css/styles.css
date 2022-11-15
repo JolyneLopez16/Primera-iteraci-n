@@ -128,3 +128,7 @@ p {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+iframe {
+    border-radius: 10px;
+}
