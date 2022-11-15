@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/HistorialActividadesFisicas.css">
-    <title>HistorialActividadesFisicas</title>
-
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/VerObjetivos.css">
+    <link rel="stylesheet" href="CSS/StylesObjetos.css">
+    <title>Ver Objetivos</title>
 </head>
 
 <body>
@@ -33,67 +33,53 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </header>
 
 
-    <h1>Historial Actividades fisicas</h1>
+    <h1>Ver Objetivos</h1>
     <h2>
         Tabla de registro
     </h2>
 
+    <section id="sct-tabla">
+        <table>
+            <thead class="titulo">
+                <tr>
+                    <th>Objetivos totales</th>
+                    <th>Estado del objetivo</th>
 
-    <section class="sct-buscar">
-        <label for="txt-busq">Busqueda actividades</label>
-        <input type="text" id="btn-buscar">
-        <div class="dropdown3">
-            <button id="btn-filtro" class="btn-verde2">Filtrar por</button>
-            <div class="dropdown-content3">
-                <a href="#">Tipo de actividad</a>
-                <a href="#">Fecha</a>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hacer 3 dias de ayunos seguidos</td>
+                    <td>23/02/2022</td>
+                </tr>
+                <tr>
+                    <td>Racha de 10 ayunos completos</td>
+                    <td>Compltad</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="sct-busc">
+        <label for="txt-busq">Busqueda de objetivos</label>
+        <input type="text" id="btn-busq">
+        <div class="dropdown2">
+            <button id="btn-filtro" class="btn-verde">Filtrar por</button>
+            <div class="dropdown-content2">
+                <a href="#">Logros conseguidos</a>
+                <a href="#">Logros no conseguidos</a>
             </div>
 
         </div>
     </section>
 
-    <section id="sct-actividades">
-        <table>
-            <thead class="titulo">
-                <tr>
-                    <th>Actividades realizadas</th>
-                    <th>Fecha de registro</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Ateltismo</td>
-                    <td>23/02/2022</td>
-                </tr>
-                <tr>
-                    <td>Fútbol</td>
-                    <td>01/03/2022</td>
-                </tr>
-                <tr>
-                    <td>Yoga</td>
-                    <td>02/03/2022</td>
-                </tr>
-                <tr>
-                    <td>Baloncesto</td>
-                    <td>03/03/2022</td>
-                </tr>
-                <tr>
-                    <td>Natación</td>
-                    <td>06/03/2022</td>
-                </tr>
-            </tbody>
-        </table>
 
-
-    </section>
-
-
-
-    <img class="img-act" src="img/graficaActFisicas.PNG" alt="">
 
 </body>
 
