@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/HistorialPeso.css">
-    <title>Historial Peso</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/VerObjetivos.css">
+    <link rel="stylesheet" href="CSS/StylesObjetos.css">
+    <title>Ver Objetivos</title>
 </head>
 
 <body>
@@ -32,49 +33,54 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </header>
 
-    <h1>Historial Peso</h1>
+
+    <h1>Ver Objetivos</h1>
     <h2>
         Tabla de registro
     </h2>
 
-    <section id="sct-peso">
+    <section id="sct-tabla">
         <table>
             <thead class="titulo">
                 <tr>
-                    <th>Peso registrados</th>
-                    <th>Fecha de registro</th>
+                    <th>Objetivos totales</th>
+                    <th>Estado del objetivo</th>
+
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>100kg</td>
-                    <td>17/03/2022</td>
+                    <td>Hacer 3 dias de ayunos seguidos</td>
+                    <td>23/02/2022</td>
                 </tr>
                 <tr>
-                    <td>95kg</td>
-                    <td>19/03/2022</td>
-                </tr>
-                <tr>
-                    <td>95kg</td>
-                    <td>23/03/2022</td>
-                </tr>
-                <tr>
-                    <td>80kg</td>
-                    <td>25/03/2022</td>
-                </tr>
-                <tr>
-                    <td>65kg</td>
-                    <td>28/03/2022</td>
+                    <td>Racha de 10 ayunos completos</td>
+                    <td>Compltad</td>
                 </tr>
             </tbody>
         </table>
-
     </section>
 
-    <img class="img-peso" src="img/graficaPeso.PNG" alt="">
+    <section class="sct-busc">
+        <label for="txt-busq">Busqueda de objetivos</label>
+        <input type="text" id="btn-busq">
+        <div class="dropdown2">
+            <button id="btn-filtro" class="btn-verde">Filtrar por</button>
+            <div class="dropdown-content2">
+                <a href="#">Logros conseguidos</a>
+                <a href="#">Logros no conseguidos</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
 </body>
 
 </html>

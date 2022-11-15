@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/HistorialPeso.css">
-    <title>Historial Peso</title>
+    <link rel="stylesheet" href="css/VerEnfermedades.css">
+    <link rel="stylesheet" href="css/StylesEnfermedades.css">
+
+    <title>ver enfermedades</title>
 </head>
 
 <body>
@@ -32,49 +34,53 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </header>
 
-    <h1>Historial Peso</h1>
+
+
+    <h1>Ver Enfermedades</h1>
     <h2>
         Tabla de registro
     </h2>
 
-    <section id="sct-peso">
+    <section class="sct-buscar">
+        <label for="txt-busq">Busqueda de enfermedades</label>
+        <input type="text" id="btn-buscar">
+        <div class="dropdown3">
+            <button id="btn-filtro" class="btn-verde2">Filtrar por</button>
+            <div class="dropdown-content3">
+                <a href="#">Nombre</a>
+                <a href="#">Estado</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sct-enfermedades">
         <table>
             <thead class="titulo">
                 <tr>
-                    <th>Peso registrados</th>
-                    <th>Fecha de registro</th>
+                    <th>Enfermedades</th>
+                    <th>Estado</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>100kg</td>
-                    <td>17/03/2022</td>
+                    <td>Autismo</td>
+                    <td>Leve</td>
                 </tr>
                 <tr>
-                    <td>95kg</td>
-                    <td>19/03/2022</td>
+                    <td>Asma</td>
+                    <td>Leve</td>
                 </tr>
-                <tr>
-                    <td>95kg</td>
-                    <td>23/03/2022</td>
-                </tr>
-                <tr>
-                    <td>80kg</td>
-                    <td>25/03/2022</td>
-                </tr>
-                <tr>
-                    <td>65kg</td>
-                    <td>28/03/2022</td>
-                </tr>
+
             </tbody>
         </table>
-
     </section>
 
-    <img class="img-peso" src="img/graficaPeso.PNG" alt="">
 </body>
 
 </html>

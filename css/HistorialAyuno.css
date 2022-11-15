@@ -1,0 +1,172 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(237, 234, 234);
+}
+
+body section {
+    margin: 8px;
+}
+
+h1 {
+    font-size: 32pt;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 26pt;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+p {
+    font-size: 13pt;
+    font-weight: 500;
+}
+
+table {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 2%;
+}
+
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 25px;
+    font-size: 20pt;
+    color: #000;
+}
+
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 25px;
+    font-size: 13pt;
+}
+
+tr {
+    text-align: center;
+    font-size: 20pt;
+}
+
+.img-ayuno {
+    padding: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+/* Navbar container */
+
+.navbar {
+    background-color: #003735;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    height: 7vh;
+    padding: 0 30px;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Logo Navbar */
+
+.navbar img {
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Links dentro de Nav-Links */
+
+.nav-links a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Dropdown */
+
+.dropdown {
+    overflow: hidden;
+    font-size: 16px;
+}
+
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+}
+
+.nav-links a:hover {
+    box-sizing: content-box;
+    border-bottom: 3px solid #fff;
+}
+
+
+/* Dropdown */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #005241;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links dentro del dropdown */
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Agrega Fondo al Nav */
+
+.dropdown-content a:hover {
+    background-color: #00aae7;
+}
+
+
+/* Enseña el submenu*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#sct-ayuno {
+    justify-content: center;
+    display: flex;
+}

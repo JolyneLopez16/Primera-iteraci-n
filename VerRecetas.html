@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/HistorialPeso.css">
-    <title>Historial Peso</title>
+    <link rel="stylesheet" href="css/VerRecetas.css">
+    <link rel="stylesheet" href="css/stylesRecetas.css">
+
+
+    <title>Ver Recetas</title>
 </head>
+
 
 <body>
     <header>
@@ -32,49 +36,67 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </header>
 
-    <h1>Historial Peso</h1>
+
+
+    <h1>Ver Recetas</h1>
     <h2>
         Tabla de registro
     </h2>
 
-    <section id="sct-peso">
+    <section class="sct-buscar">
+        <label for="txt-busq">Busqueda de recetas</label>
+        <input type="text" id="btn-buscar">
+        <div class="dropdown3">
+            <button id="btn-filtro" class="btn-verde2">Filtrar por</button>
+            <div class="dropdown-content3">
+                <a href="#">Nombre</a>
+                <a href="#">Tipo de comida</a>
+                <a href="#">Categoría</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sct-receta">
         <table>
             <thead class="titulo">
                 <tr>
-                    <th>Peso registrados</th>
-                    <th>Fecha de registro</th>
+                    <th>Recetas</th>
+                    <th>Tipo de comida</th>
+                    <th>Categoría</th>
+
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>100kg</td>
-                    <td>17/03/2022</td>
+                    <td>Ensalda caprese de pasta</td>
+                    <td>Vegetariana</td>
+                    <td>Ensaladas</td>
                 </tr>
                 <tr>
-                    <td>95kg</td>
-                    <td>19/03/2022</td>
+                    <td>Arroz con carne</td>
+                    <td>Carnes</td>
+                    <td>Carnes rojas</td>
                 </tr>
                 <tr>
-                    <td>95kg</td>
-                    <td>23/03/2022</td>
-                </tr>
-                <tr>
-                    <td>80kg</td>
-                    <td>25/03/2022</td>
-                </tr>
-                <tr>
-                    <td>65kg</td>
-                    <td>28/03/2022</td>
+                    <td>Pasta en salsa de tomate</td>
+                    <td>Pasta</td>
+                    <td>Pasta</td>
                 </tr>
             </tbody>
         </table>
-
     </section>
 
-    <img class="img-peso" src="img/graficaPeso.PNG" alt="">
+
+
+
+
+
 </body>
 
 </html>
