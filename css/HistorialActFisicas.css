@@ -1,0 +1,15 @@
+h1 {
+    margin-top: 20px;
+}
+
+#sct-actividades {
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.img-act {
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 3%
+}
