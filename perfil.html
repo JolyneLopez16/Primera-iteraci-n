@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/registro.css">
+    <link rel="stylesheet" href="/css/perfil.css">
 </head>
 
 <body>
@@ -16,11 +17,18 @@
             <a href="index.html"><img src="/img/logo-sinfondo.png" alt="Keto Logo"></a>
             <div class="nav-links">
                 <a href="perfil.html">Perfil</a>
-                <a href="peso.html">Peso</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.location.href ='/peso.html'">Peso
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="registrarPeso.html">Registar Peso</a>
+                    </div>
+                </div>
                 <a href="ayuno.html">Ayuno</a>
                 <a href="objetivos.html">Objetivos</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Otros
+                    <button class="dropbtn no-pointer">Otros
                     <i class="fa fa-caret-down"></i>
                 </button>
                     <div class="dropdown-content">
@@ -28,7 +36,80 @@
                         <a href="actividad-fisica.html">Actividad Física</a>
                         <a href="recomendaciones.html">Recomendaciones</a>
                         <a href="enfermedades.html">Enfermedades</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+    <section class="sct-registro">
+        <h1>Perfil</h1>
+        <h2>Detalles del Perfil</h2>
+        <section class="sct-datos">
+            <div class="datos-box">
+
+                <div class="resultado-box">
+                    <span class="dato-id">Nombre</span>
+                    <span>Raúl</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Apellido</span>
+                    <span>Álvarez</span>
+                </div>
+
+
+                <div class="resultado-box">
+                    <span class="dato-id">Fecha de Nacimiento</span>
+                    <span>1988/11/05</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Edad</span>
+                    <span>34</span>
+                </div>
+
+
+                <div class="resultado-box">
+                    <span class="dato-id">Estatura (M)</span>
+                    <span>1.73</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Sexo</span>
+                    <span>Masculino</span>
+                </div>
+
+                <div class="resultado-box">
+                    <span class="dato-id">Correo Electrónico</span>
+                    <span>raula@gmail.com</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Peso Actual</span>
+                    <span>80 kg</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Peso a Alcanzar</span>
+                    <span>70 kg</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sct-calculos">
+
+            <div class="resultado-box">
+                <span class="dato-id">IMC</span>
+                <span>26.7</span>
+            </div>
+            <div class="resultado-box">
+                <span class="dato-id">Clasificación</span>
+                <span>Sobrepeso</span>
+            </div>
+
+        </section>
+        <section class="sct-foto-perfil">
+            <div class="img-input">
+                <img src="/img/foto-perfil.png" alt="Foto Perfil">
+            </div>
+
+        </section>
+    </section>
 </body>
 
 </html>

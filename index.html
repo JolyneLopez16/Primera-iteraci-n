@@ -12,21 +12,26 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/HistorialActFisicas.css">
 </head>
 
 <body>
     <header>
         <div class="navbar">
-            <a href="index.html"><img src="/img/logo.png" alt="Keto Logo"></a>
-
+            <a href="index.html"><img src="/img/logo-sinfondo.png" alt="Keto Logo"></a>
             <div class="nav-links">
                 <a href="perfil.html">Perfil</a>
-                <a href="peso.html">Peso</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.location.href ='/peso.html'">Peso
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="registrarPeso.html">Registar Peso</a>
+                    </div>
+                </div>
                 <a href="ayuno.html">Ayuno</a>
                 <a href="objetivos.html">Objetivos</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Otros
+                    <button class="dropbtn no-pointer">Otros
                     <i class="fa fa-caret-down"></i>
                 </button>
                     <div class="dropdown-content">

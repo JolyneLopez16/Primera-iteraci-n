@@ -34,14 +34,10 @@
 
 .datos-box {
     height: 100%;
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* grid-template-columns: 50% 50%;
-    grid-column-start: 10px;
-    column-gap: 200px;
-    row-gap: 20px; */
     align-items: center;
     justify-content: space-between;
 }

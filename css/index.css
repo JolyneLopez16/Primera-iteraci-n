@@ -113,9 +113,14 @@
     border-radius: 10px;
 }
 
+.img-box a:hover {
+    text-decoration: underline;
+    color: #c7e76d !important;
+}
+
 a {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
 }
 
 a:hover {

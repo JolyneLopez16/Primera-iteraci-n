@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(237, 234, 234);
@@ -88,7 +92,7 @@ tr {
 
 .nav-links a {
     font-size: 16px;
-    color: white;
+    color: #fff;
     text-align: center;
     text-decoration: none;
 }
@@ -111,6 +115,14 @@ tr {
     color: white;
     background-color: inherit;
     margin: 0;
+}
+
+.dropbtn:hover {
+    cursor: pointer;
+}
+
+.no-pointer:hover {
+    cursor: default !important;
 }
 
 .nav-links a:hover {
