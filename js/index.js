@@ -70,36 +70,12 @@ const validar = () => {
 
     if (error == false) {
 
-        persona.nombre = txtNombre.value;
-        persona.fecha = txtFecha.value;
-        persona.estatura = txtEstatura.value;
-        persona.correo = txtCorreo.value;
-        persona.apellido = txtApellido.value;
-        persona.edad = txtEdad.value;
-        persona.sexo = txtSexo.value;
-        persona.pesoo = txtPesoo.value;
-
-
-        imprimirTabla();
-    } else {
         alert("Vuelva a intentar");
 
         //location.reload();
     }
     if (error == true) {
 
-        persona.nombre = txtNombre.value;
-        persona.fecha = txtFecha.value;
-        persona.estatura = txtEstatura.value;
-        persona.correo = txtCorreo.value;
-        persona.apellido = txtApellido.value;
-        persona.edad = txtEdad.value;
-        persona.sexo = txtSexo.value;
-        persona.pesoo = txtPesoo.value;
-
-
-        imprimirTabla();
-    } else {
         alert("Sus datos fueron ingresados correctamente");
 
         //location.reload();
