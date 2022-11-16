@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - App Ayuno Intermitente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/registro.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html"><img src="/img/logo-sinfondo.png" alt="Keto Logo"></a>
+            <div class="nav-links">
+                <a href="perfil.html">Perfil</a>
+                <a href="peso.html">Peso</a>
+                <a href="ayuno.html">Ayuno</a>
+                <a href="objetivos.html">Objetivos</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Otros
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="recetas.html">Recetas</a>
+                        <a href="actividad-fisica.html">Actividad Física</a>
+                        <a href="recomendaciones.html">Recomendaciones</a>
+                        <a href="enfermedades.html">Enfermedades</a>
+
+
+
+
+    </header>
+    <section class="sct-registro">
+        <h1>Registro de Aplicación</h1>
+        <h2>Bienvenido, registrese para iniciar su aventura del Ayuno Intermitente</h2>
+        <section class="sct-datos">
+            <div class="datos-box">
+
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellidos">
+
+
+                <input type="date" placeholder="Fecha de nacimiento" max="2022-11-15" id="">
+                <input type="number" min="0" placeholder="Edad">
+
+
+                <input type="number" placeholder="Estatura (M)">
+                <select name="Sexo" id="">
+                    <option value="Sexo" disabled selected>Sexo</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+
+
+                <input type="email" name="Correo" placeholder="Correo electrónico" id="">
+                <input type="number" placeholder="Peso Actual (Kg)">
+                <input class="peso-alcanzar" type="number" placeholder="Peso a alcanzar (Kg)">
+            </div>
+        </section>
+        <section class="sct-foto-perfil">
+
+
+            <div class="img-input">
+                <label for="">Ingrese Foto</label>
+                <input type="image" src="/img/insertar-img.png" height="150px" width="150px" alt="Agrege su Foto de Perfil">
+            </div>
+            <button class="btn-registro" onclick="window.location.href='/perfil.html'"><span>Registrar</span></button>
+
+        </section>
+    </section>
+</body>
+
+</html>
