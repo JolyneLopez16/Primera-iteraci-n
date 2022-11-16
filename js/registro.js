@@ -2,14 +2,16 @@ const txtNombre = document.getElementById("txt-nombre");
 const txtFecha = document.getElementById("txt-fecha");
 const txtEstatura = document.getElementById("txt-estatura");
 const txtCorreo = document.getElementById("txt-correo");
-const txtApellido = document.getElementById("txt-apeilldo");
+const txtApellido = document.getElementById("txt-apellido");
 const txtEdad = document.getElementById("txt-edad");
 const txtSexo = document.getElementById("txt-sexo");
+const txtPesoa = document.getElementById("txt-pesoa");
 const txtPesoo = document.getElementById("txt-pesoo");
-const btnRegitsrar = document.getElementById("btn-registrar");
+const btnRegistrar = document.getElementById("btn-registrar");
 
 const validar = () => {
     let error = false;
+
 
     if (txtNombre.value == "") {
         error = true;
@@ -53,7 +55,7 @@ const validar = () => {
         txtEdad.classList.remove("input-error");
     }
 
-    if (txtSexo.value == "") {
+    if (txtSexo.value == "Sexo") {
         error = true;
         txtSexo.classList.add("input-error");
     } else {
@@ -67,19 +69,29 @@ const validar = () => {
         txtPesoo.classList.remove("input-error");
     }
 
+    if (txtPesoa.value == "") {
+        error = true;
+        txtPesoa.classList.add("input-error");
+    } else {
+        txtPesoa.classList.remove("input-error");
+    }
 
-    if (error == false) {
+
+
+    if (error == true) {
 
         alert("Vuelva a intentar");
 
         //location.reload();
     }
-    if (error == true) {
+    if (error == false) {
 
         alert("Sus datos fueron ingresados correctamente");
+        window.location.href = "/perfil.html";
 
         //location.reload();
     }
+
 
 };
 

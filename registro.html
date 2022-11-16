@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/registro.css">
+    <link rel="stylesheet" href="/css/input.css">
 </head>
 
 <body>
@@ -31,10 +32,6 @@
                         <a href="actividad-fisica.html">Actividad Física</a>
                         <a href="recomendaciones.html">Recomendaciones</a>
                         <a href="enfermedades.html">Enfermedades</a>
-
-
-
-
     </header>
     <section class="sct-registro">
         <h1>Registro de Aplicación</h1>
@@ -42,25 +39,25 @@
         <section class="sct-datos">
             <div class="datos-box">
 
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellidos">
+                <input type="text" id="txt-nombre" placeholder="Nombre">
+                <input type="text" id="txt-apellido" placeholder="Apellidos">
 
 
-                <input type="date" placeholder="Fecha de nacimiento" max="2022-11-15" id="">
-                <input type="number" min="0" placeholder="Edad">
+                <input type="date" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
+                <input type="number" min="0" id="txt-edad" placeholder="Edad">
 
 
-                <input type="number" placeholder="Estatura (M)">
-                <select name="Sexo" id="">
+                <input type="number" id="txt-estatura" placeholder="Estatura (M)">
+                <select name="Sexo" id="txt-sexo">
                     <option value="Sexo" disabled selected>Sexo</option>
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
                 </select>
 
 
-                <input type="email" name="Correo" placeholder="Correo electrónico" id="">
-                <input type="number" placeholder="Peso Actual (Kg)">
-                <input class="peso-alcanzar" type="number" placeholder="Peso a alcanzar (Kg)">
+                <input type="email" name="Correo" placeholder="Correo electrónico" id="txt-correo">
+                <input type="number" id="txt-pesoa" placeholder="Peso Actual (Kg)">
+                <input id="txt-pesoo" type="number" placeholder="Peso a alcanzar (Kg)">
             </div>
         </section>
         <section class="sct-foto-perfil">
@@ -70,10 +67,12 @@
                 <label for="">Ingrese Foto</label>
                 <input type="image" src="/img/insertar-img.png" height="150px" width="150px" alt="Agrege su Foto de Perfil">
             </div>
-            <button class="btn-registro" onclick="window.location.href='/perfil.html'"><span>Registrar</span></button>
+            <button class="btn-registro" id="btn-registrar"><span>Registrar</span></button>
 
         </section>
     </section>
+
+    <script src="/js/registro.js"></script>
 </body>
 
 </html>
