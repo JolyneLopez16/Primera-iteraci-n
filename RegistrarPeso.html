@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Peso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/opciones.css">
+    <link rel="stylesheet" href="css/RegistrarPeso.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html"><img src="/img/logo-sinfondo.png" alt="Keto Logo"></a>
+            <div class="nav-links">
+                <a href="perfil.html">Perfil</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.location.href ='/peso.html'">Peso
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="registrarPeso.html">Registar Peso</a>
+                    </div>
+                </div>
+                <a href="ayuno.html">Ayuno</a>
+                <a href="objetivos.html">Objetivos</a>
+                <div class="dropdown">
+                    <button class="dropbtn no-pointer">Otros
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="recetas.html">Recetas</a>
+                        <a href="actividad-fisica.html">Actividad Física</a>
+                        <a href="recomendaciones.html">Recomendaciones</a>
+                        <a href="enfermedades.html">Enfermedades</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sct-registrar-peso">
+        <div class="titulos-registrar-peso">
+            <h1>Registrar peso</h1>
+            <h2>Añade una nueva medición de tu peso</h2>
+        </div>
+        <div class="fondo-peso">
+            <div class="etiqueta-peso">
+                <h2>Peso</h2>
+            </div>
+            <div class="entrada-peso">
+                <input type="number" class="fondo-entrada-peso">
+                <h3>kg</h3>
+            </div>
+        </div>
+        <div class="fondo-fecha">
+            <div class="etiqueta-fecha">
+                <h2>Fecha</h2>
+            </div>
+            <div>
+                <input type="date" class="ingresar-fecha-peso">
+            </div>
+        </div>
+        <div>
+            <button class="btn-guardar-peso"><span>Guardar</span></button>
+        </div>
+    </section>
+</body>
+
+</html>
