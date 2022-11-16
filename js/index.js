@@ -18,7 +18,7 @@ const validar = () => {
         txtNombre.classList.remove("input-error");
     }
 
-    if (txtfecha.value == "") {
+    if (txtFecha.value == "") {
         error = true;
         txtFecha.classList.add("input-error");
     } else {
