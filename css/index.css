@@ -397,7 +397,7 @@ li {
         background: none;
     }
     .content-box a {
-        color: #6dab5d;
+        color: #6dab5d !important;
         font-size: 6pt;
         line-height: 1;
     }
