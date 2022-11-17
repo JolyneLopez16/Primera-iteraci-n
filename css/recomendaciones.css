@@ -5,7 +5,7 @@ h1 {
 
 .sct-recomendaciones {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 70px;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 50% 50%;
@@ -27,32 +27,33 @@ h1 {
     font-size: 20px;
 }
 
-.tip-box:first-child{
+.tip-box:first-child {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.tip-box:nth-child(4n+4){
+.tip-box:nth-child(4n+4) {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.tip-box:nth-child(3n+3){
+.tip-box:nth-child(3n+3) {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.tip-box:last-child{
+.tip-box:last-child {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.tip-box:nth-child(odd){
-    background-color:#003735;
+.tip-box:nth-child(odd) {
+    background-color: #003735;
     color: #fff;
 }
-.tip-box:nth-child(even){
-    background-color:#6dab5d;
+
+.tip-box:nth-child(even) {
+    background-color: #6dab5d;
     color: #000;
 }
 
