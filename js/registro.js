@@ -3,7 +3,6 @@ const txtFecha = document.getElementById("txt-fecha");
 const txtEstatura = document.getElementById("txt-estatura");
 const txtCorreo = document.getElementById("txt-correo");
 const txtApellido = document.getElementById("txt-apellido");
-const txtEdad = document.getElementById("txt-edad");
 const txtSexo = document.getElementById("txt-sexo");
 const txtPesoa = document.getElementById("txt-pesoa");
 const txtPesoo = document.getElementById("txt-pesoo");
@@ -11,7 +10,6 @@ const btnRegistrar = document.getElementById("btn-registrar");
 
 const validar = () => {
     let error = false;
-
 
     if (txtNombre.value == "") {
         error = true;
@@ -48,13 +46,6 @@ const validar = () => {
         txtApellido.classList.remove("input-error");
     }
 
-    if (txtEdad.value == "") {
-        error = true;
-        txtEdad.classList.add("input-error");
-    } else {
-        txtEdad.classList.remove("input-error");
-    }
-
     if (txtSexo.value == "Sexo") {
         error = true;
         txtSexo.classList.add("input-error");
@@ -76,8 +67,6 @@ const validar = () => {
         txtPesoa.classList.remove("input-error");
     }
 
-
-
     if (error == true) {
 
         alert("Vuelva a intentar");
@@ -91,10 +80,13 @@ const validar = () => {
 
         //location.reload();
     }
+}
 
 
-};
 
 
 
-btnRegistrar.addEventListener("click", validar);
+
+
+
+btnRegistrar.addEventListener('click', validar);

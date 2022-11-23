@@ -55,7 +55,7 @@
 
 .btn-registro {
     width: 300px;
-    height: 40px;
+    height: 60px;
     border-radius: 10px;
     border: none;
     background-color: #003735;
@@ -68,7 +68,7 @@
 
 .btn-registro span {
     color: #fff;
-    font-size: 20px;
+    font-size: 20pt;
 }
 
 
@@ -141,6 +141,7 @@ li {
 .img-box h3 {
     color: #dee8f0;
     font-weight: bold;
+    font-size: 26pt;
 }
 
 .img-box:nth-child(1) {
