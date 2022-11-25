@@ -9,7 +9,27 @@ const txtPesoo = document.getElementById("txt-pesoo");
 const btnRegistrar = document.getElementById("btn-registrar");
 
 const validar = () => {
-    let error = false;
+
+    let llenos = [];
+    let required = document.getElementsByClassName('required');
+    for (let i = 0; i < required.length; i++) {
+        if (required[i].value == "" || required[i].value == "Sexo") {
+            required[i].classList.add("input-error");
+            llenos.push('vacio');
+        } else {
+            required[i].classList.remove("input-error");
+            llenos.push('lleno');
+        }
+    }
+    let espacios = llenos.find(element => element == 'vacio');
+    if (espacios == 'vacio') {
+        alert("Por favor llene todos los espacios");
+    } else {
+        alert("Sus datos fueron ingresados correctamente");
+        window.location.href = "/perfil.html";
+    }
+
+    /* let error = false;
 
     if (txtNombre.value == "") {
         error = true;
@@ -79,14 +99,7 @@ const validar = () => {
         window.location.href = "/perfil.html";
 
         //location.reload();
-    }
+    } */
 }
-
-
-
-
-
-
-
 
 btnRegistrar.addEventListener('click', validar);

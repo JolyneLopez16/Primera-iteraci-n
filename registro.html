@@ -49,24 +49,24 @@
         <section class="sct-datos">
             <div class="datos-box">
 
-                <input type="text" id="txt-nombre" placeholder="Nombre">
-                <input type="text" id="txt-apellido" placeholder="Apellido">
+                <input type="text" id="txt-nombre" class="required" placeholder="Nombre">
+                <input type="text" id="txt-apellido" class="required" placeholder="Apellido">
 
 
-                <input type="date" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
+                <input type="date" class="required" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
 
 
-                <input type="number" id="txt-estatura" min="0" placeholder="Estatura (M)">
-                <select name="Sexo" id="txt-sexo">
+                <input type="number" class="required" id="txt-estatura" min="0" placeholder="Estatura (M)">
+                <select name="Sexo" class="required" id="txt-sexo">
                     <option value="Sexo" disabled selected>Sexo</option>
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
                 </select>
 
 
-                <input type="email" name="Correo" placeholder="Correo electrónico" id="txt-correo">
-                <input type="number" min="0" id="txt-pesoa" placeholder="Peso Actual (Kg)">
-                <input id="txt-pesoo" min="0" type="number" placeholder="Peso a alcanzar (Kg)">
+                <input type="email" class="required" name="Correo" placeholder="Correo electrónico" id="txt-correo">
+                <input type="number" class="required" min="0" id="txt-pesoa" placeholder="Peso Actual (Kg)">
+                <input id="txt-pesoo" class="required" min="0" type="number" placeholder="Peso a alcanzar (Kg)">
             </div>
         </section>
         <section class="sct-foto-perfil">
