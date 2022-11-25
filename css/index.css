@@ -14,6 +14,7 @@
 /* Incio Seccion Header */
 
 #sct-header {
+    margin: 0;
     height: 50vh;
     width: 80%;
     display: flex;
@@ -54,7 +55,7 @@
 
 .btn-registro {
     width: 300px;
-    height: 40px;
+    height: 60px;
     border-radius: 10px;
     border: none;
     background-color: #003735;
@@ -67,7 +68,7 @@
 
 .btn-registro span {
     color: #fff;
-    font-size: 20px;
+    font-size: 20pt;
 }
 
 
@@ -113,9 +114,14 @@
     border-radius: 10px;
 }
 
+.img-box a:hover {
+    text-decoration: underline;
+    color: #c7e76d !important;
+}
+
 a {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
 }
 
 a:hover {
@@ -135,6 +141,7 @@ li {
 .img-box h3 {
     color: #dee8f0;
     font-weight: bold;
+    font-size: 26pt;
 }
 
 .img-box:nth-child(1) {
@@ -197,7 +204,7 @@ li {
 }
 
 .img-final-box a {
-    color: #dee8f0;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -391,7 +398,7 @@ li {
         background: none;
     }
     .content-box a {
-        color: #6dab5d;
+        color: #6dab5d !important;
         font-size: 6pt;
         line-height: 1;
     }

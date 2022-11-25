@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peso - Ayuno Intermitente App</title>
+    <title>Registrar Ayuno</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/opciones.css">
+    <link rel="stylesheet" href="css/RegistrarAyuno.css">
 </head>
 
 <body>
@@ -43,34 +44,47 @@
             </div>
         </div>
     </header>
-    <h1>
-        Peso
-    </h1>
-    <section class="sct-opciones">
-        <div class="img-box">
-            <a href="/registrarPeso.html">
-                <div>
-                    <h2 class="txt-cuadro">Registrar Peso</h2>
-                </div>
-            </a>
+    <section id="sct-registrar-ayuno">
+        <div class="titulos-registrar-ayuno">
+            <h1>Registrar ayuno</h1>
+            <h2>Añade una nueva entrada</h2>
         </div>
-        <div class="img-box">
-            <a href="/HistorialPeso.html">
+        <div class="fondo-intervalo">
+            <div class="etiqueta-inicio">
+                <h2>Inicio</h2>
                 <div>
-                    <h2 class="txt-cuadro">Ver Historial</h2>
+                    <input type="datetime" class="fondo-entrada-inicio-ayuno">
                 </div>
-            </a>
+            </div>
+            <div class="barra-division"></div>
+            <div class="etiqueta-fin">
+                <h2>Fin</h2>
+                <div>
+                    <input type="datetime" class="fondo-entrada-fin-ayuno">
+                </div>
+            </div>
+        </div>
+        <div class="fondo-plan-ayuno">
+            <div class="etiqueta-plan-ayuno">
+                <h2>Plan de ayuno</h2>
+            </div>
+            <div class="botones-planes">
+                <button class="plan"><span>14:10</span></button>
+                <button class="plan"><span>16:8</span></button>
+                <button class="plan"><span>18:6</span></button>
+                <button class="plan"><span>20:4</span></button>
+            </div>
+        </div>
+        <div class="fondo-haz-ayunado">
+            <div>
+                <h2>Has ayunado durante</h2>
+                <h2>15h. 4min.</h2>
+            </div>
+            <div>
+                <button class="btn-guardar"><span>Guardar</span></button>
+            </div>
         </div>
     </section>
-    <section class="sct-videos">
-        <h2>Videos que te Podrían Interesar</h2>
-        <div class="videos-box">
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/SHi34sv64fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/a5HKx79sZrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/owwlOaVRxj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-
 </body>
 
 </html>

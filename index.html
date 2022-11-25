@@ -17,15 +17,21 @@
 <body>
     <header>
         <div class="navbar">
-            <a href="index.html"><img src="/img/logo.png" alt="Keto Logo"></a>
-
+            <a href="index.html"><img src="/img/logo-sinfondo.png" alt="Keto Logo"></a>
             <div class="nav-links">
                 <a href="perfil.html">Perfil</a>
-                <a href="peso.html">Peso</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.location.href ='/peso.html'">Peso
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="registrarPeso.html">Registar Peso</a>
+                    </div>
+                </div>
                 <a href="ayuno.html">Ayuno</a>
                 <a href="objetivos.html">Objetivos</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Otros
+                    <button class="dropbtn no-pointer">Otros
                     <i class="fa fa-caret-down"></i>
                 </button>
                     <div class="dropdown-content">
@@ -41,7 +47,7 @@
             <a href="#home">Ayuno Intermitente App</a>
             <div id="nav-links-mobile">
                 <a href="perfil.html">Perfil</a>
-                <a href="peso.html">Peso</a>
+                <a href="/peso.html">Peso</a>
                 <a href="ayuno.html">Ayuno</a>
                 <a href="objetivos.html">Objetivos</a>
                 <a href="recetas.html">Recetas</a>
@@ -59,7 +65,7 @@
             <h1>OM Ayuno Intermitente App</h1>
             <p>Este Web App de Ayuno Intermitente te va a ayudar a mantener el control de tus ayunos.</p>
             <p>Tambien te damos la facilidad de usar los diferentes registros que tenemos para que te mantengas en forma y cuidando tu cuerpo.</p>
-            <button class="btn-registro"><span>Registrate Aquí</span></button>
+            <button class="btn-registro" onclick="window.location.href='/registro.html'"><span>Registrate Aquí</span></button>
         </div>
         <div class="img-header-box">
             <img src="/img/ayuno_Intermitente.png" alt="Ayuno Intermitente" title="Ayuno Intermitente">
@@ -97,9 +103,9 @@
             <h2>Más atributos de la aplicación</h2>
             <div class="content-box">
                 <ul>
-                    <li><a href="objetivos.html">Registro de Objetivos y Logros</a></li>
-                    <li><a href="recetas.html">Registro de Recetas</a></li>
-                    <li><a href="enfermedades.html">Registro de Enfermedades</a></li>
+                    <li><a href="RegistrarObjetivos.html">Registro de Objetivos y Logros</a></li>
+                    <li><a href="RegistrarRecetas.html">Registro de Recetas</a></li>
+                    <li><a href="RegistrarEnfermedad.html">Registro de Enfermedades</a></li>
                 </ul>
             </div>
         </div>
@@ -116,6 +122,3 @@
         </div>
     </section>
     <script src="/js/functions.js"></script>
-</body>
-
-</html>

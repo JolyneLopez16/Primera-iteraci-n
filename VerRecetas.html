@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peso - Ayuno Intermitente App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/opciones.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/VerRecetas.css">
+    <link rel="stylesheet" href="css/stylesRecetas.css">
+
+
+    <title>Ver Recetas</title>
 </head>
+
 
 <body>
     <header>
@@ -42,34 +45,64 @@
                 </div>
             </div>
         </div>
+
     </header>
-    <h1>
-        Peso
-    </h1>
-    <section class="sct-opciones">
-        <div class="img-box">
-            <a href="/registrarPeso.html">
-                <div>
-                    <h2 class="txt-cuadro">Registrar Peso</h2>
-                </div>
-            </a>
-        </div>
-        <div class="img-box">
-            <a href="/HistorialPeso.html">
-                <div>
-                    <h2 class="txt-cuadro">Ver Historial</h2>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section class="sct-videos">
-        <h2>Videos que te Podrían Interesar</h2>
-        <div class="videos-box">
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/SHi34sv64fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/a5HKx79sZrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/owwlOaVRxj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    <h1>Ver Recetas</h1>
+    <h2>
+        Tabla de registro
+    </h2>
+
+    <section class="sct-buscar">
+        <label for="txt-busq">Búsqueda de recetas</label>
+        <input type="text" id="btn-buscar">
+        <div class="dropdown3">
+            <button id="btn-filtro" class="btn-verde2">Filtrar por</button>
+            <div class="dropdown-content3">
+                <a href="#">Nombre</a>
+                <a href="#">Tipo de comida</a>
+                <a href="#">Categoría</a>
+            </div>
+
         </div>
     </section>
+
+    <section id="sct-receta">
+        <table>
+            <thead class="titulo">
+                <tr>
+                    <th>Recetas</th>
+                    <th>Tipo de comida</th>
+                    <th>Categoría</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ensalda caprese de pasta</td>
+                    <td>Vegetariana</td>
+                    <td>Ensaladas</td>
+                </tr>
+                <tr>
+                    <td>Arroz con carne</td>
+                    <td>Carnes</td>
+                    <td>Carnes rojas</td>
+                </tr>
+                <tr>
+                    <td>Pasta en salsa de tomate</td>
+                    <td>Pasta</td>
+                    <td>Pasta</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+
 
 </body>
 

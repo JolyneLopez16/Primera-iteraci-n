@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peso - Ayuno Intermitente App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/opciones.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/HistorialActividadesFisicas.css">
+    <title>HistorialActividadesFisicas</title>
+
 </head>
 
 <body>
@@ -43,33 +43,65 @@
             </div>
         </div>
     </header>
-    <h1>
-        Peso
-    </h1>
-    <section class="sct-opciones">
-        <div class="img-box">
-            <a href="/registrarPeso.html">
-                <div>
-                    <h2 class="txt-cuadro">Registrar Peso</h2>
-                </div>
-            </a>
-        </div>
-        <div class="img-box">
-            <a href="/HistorialPeso.html">
-                <div>
-                    <h2 class="txt-cuadro">Ver Historial</h2>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section class="sct-videos">
-        <h2>Videos que te Podrían Interesar</h2>
-        <div class="videos-box">
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/SHi34sv64fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/a5HKx79sZrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/owwlOaVRxj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <h1>Historial Actividades fisicas</h1>
+    <h2>
+        Tabla de registro
+    </h2>
+
+
+    <section class="sct-buscar">
+        <label for="txt-busq">Búsqueda actividades</label>
+        <input type="text" id="btn-buscar">
+        <div class="dropdown3">
+            <button id="btn-filtro" class="btn-verde2">Filtrar por</button>
+            <div class="dropdown-content3">
+                <a href="#">Tipo de actividad</a>
+                <a href="#">Fecha</a>
+            </div>
+
         </div>
     </section>
+
+    <section id="sct-actividades">
+        <table>
+            <thead class="titulo">
+                <tr>
+                    <th>Actividades realizadas</th>
+                    <th>Fecha de registro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ateltismo</td>
+                    <td>23/02/2022</td>
+                </tr>
+                <tr>
+                    <td>Fútbol</td>
+                    <td>01/03/2022</td>
+                </tr>
+                <tr>
+                    <td>Yoga</td>
+                    <td>02/03/2022</td>
+                </tr>
+                <tr>
+                    <td>Baloncesto</td>
+                    <td>03/03/2022</td>
+                </tr>
+                <tr>
+                    <td>Natación</td>
+                    <td>06/03/2022</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </section>
+
+
+
+    <img class="img-act" src="img/graficaActFisicas.PNG" alt="">
 
 </body>
 

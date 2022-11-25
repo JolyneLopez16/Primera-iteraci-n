@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +8,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/registro.css">
-    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/perfil.css">
 </head>
 
 <body>
@@ -45,56 +42,74 @@
         </div>
     </header>
     <section class="sct-registro">
-        <h1>Registro de Aplicación</h1>
+        <h1>Perfil</h1>
+        <h2>Detalles del Perfil</h2>
         <section class="sct-datos">
-
             <div class="datos-box">
 
-                <input type="text" id="txt-nombre" class="required" placeholder="Nombre">
-                <input type="text" id="txt-apellido" class="required" placeholder="Apellido">
+                <div class="resultado-box">
+                    <span class="dato-id">Nombre</span>
+                    <span>Raúl</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Apellido</span>
+                    <span>Álvarez</span>
+                </div>
 
 
-                <input type="date" class="required" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
+                <div class="resultado-box">
+                    <span class="dato-id">Fecha de Nacimiento</span>
+                    <span>05/11/1988</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Edad</span>
+                    <span>34</span>
+                </div>
 
 
-                <input type="number" class="required" id="txt-estatura" min="0" placeholder="Estatura (M)">
-                <select name="Sexo" class="required" id="txt-sexo">
+                <div class="resultado-box">
+                    <span class="dato-id">Estatura (M)</span>
+                    <span>1.73</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Sexo</span>
+                    <span>Masculino</span>
+                </div>
 
-                        <option value="Sexo" disabled selected>Sexo</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Femenino">Femenino</option>
-                    </select>
-                   <option value="Sexo" disabled selected>Sexo</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                </select>
-
-
-
-                <input type="email" class="required" name="Correo" placeholder="Correo electrónico" id="txt-correo">
-                <input type="number" class="required" min="0" id="txt-pesoa" placeholder="Peso Actual (Kg)">
-                <input id="txt-pesoo" class="required" min="0" type="number" placeholder="Peso a alcanzar (Kg)">
+                <div class="resultado-box">
+                    <span class="dato-id">Correo Electrónico</span>
+                    <span>raula@gmail.com</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Peso Actual</span>
+                    <span>80 kg</span>
+                </div>
+                <div class="resultado-box">
+                    <span class="dato-id">Peso a Alcanzar</span>
+                    <span>70 kg</span>
+                </div>
             </div>
         </section>
-        <section class="sct-foto-perfil">
 
+        <section class="sct-calculos">
 
-            <div class="img-input">
-                <label for="">Ingrese Foto</label>
-                <input type="image" src="/img/insertar-img.png" height="150px" width="150px" alt="Agrege su Foto de Perfil">
+            <div class="resultado-box">
+                <span class="dato-id">IMC</span>
+                <span>26.7</span>
             </div>
-            <button class="btn-registro" id="btn-registrar" type="button"><span>Registrar</span></button>
+            <div class="resultado-box">
+                <span class="dato-id">Clasificación</span>
+                <span>Sobrepeso</span>
+            </div>
+
+        </section>
+        <section class="sct-foto-perfil">
+            <div class="img-input">
+                <img src="/img/foto-perfil.png" alt="Foto Perfil">
+            </div>
 
         </section>
     </section>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/servicio-general.js"></script>
-    <script src="/js/registro.js"></script>
-
 </body>
 
 </html>

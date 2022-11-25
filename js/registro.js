@@ -22,7 +22,7 @@ const validar = () => {
         }
     }
     let espacios = llenos.find(element => element == 'vacio');
-    if (espacios == 'vacio') {
+
         Swal.fire({
             showClass: {
                 popup: 'animate__animated animate__fadeInDown'
@@ -47,6 +47,10 @@ const validar = () => {
             'pesoMeta': txtPesoo.value,
             'foto': ''
         };
+        alert("Por favor llene todos los espacios");
+    } else {
+        alert("Sus datos fueron ingresados correctamente");
+        window.location.href = "/perfil.html";
 
     }
 

@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peso - Ayuno Intermitente App</title>
+    <title>Registrar Actividad Física</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/opciones.css">
+    <link rel="stylesheet" href="css/RegistrarActividadFisica.css">
 </head>
 
 <body>
@@ -43,34 +44,61 @@
             </div>
         </div>
     </header>
-    <h1>
-        Peso
-    </h1>
-    <section class="sct-opciones">
-        <div class="img-box">
-            <a href="/registrarPeso.html">
-                <div>
-                    <h2 class="txt-cuadro">Registrar Peso</h2>
+    <section id="sct-registrar-actividad-fisica">
+        <div class="titulos-registrar-actividad-fisica">
+            <h1>Registrar actividad fisica</h1>
+            <h2>Añade una nueva entrada</h2>
+        </div>
+        <div class="division-superior">
+            <div class="fecha">
+                <h2>Fecha</h2>
+                <input type="date" class="entrada-fecha">
+            </div>
+            <div class="tipo-actividad">
+                <h2>Tipo de actividad</h2>
+                <div class="check">
+                    <div class="tipo">
+                        <input type="checkbox">
+                        <h3>Natación</h3>
+                    </div>
+                    <div class="tipo">
+                        <input type="checkbox">
+                        <h3>Ciclismo</h3>
+                    </div>
+                    <div class="tipo">
+                        <input type="checkbox">
+                        <h3>Atletismo</h3>
+                    </div>
+                    <a href="/RegistrarTipoActividadFisica.html">
+                        <div>
+                            <button class="btn-tipo-ac"><span>Agregar Tipo</span></button>
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="img-box">
-            <a href="/HistorialPeso.html">
-                <div>
-                    <h2 class="txt-cuadro">Ver Historial</h2>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section class="sct-videos">
-        <h2>Videos que te Podrían Interesar</h2>
-        <div class="videos-box">
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/SHi34sv64fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/a5HKx79sZrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="540" height="290" src="https://www.youtube.com/embed/owwlOaVRxj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
 
+
+            </div>
+        </div>
+        <div class="division-inferior">
+            <div class="hora">
+                <h2>Hora</h2>
+                <div class="intervalo-hora">
+                    <div class="inicio-fin">
+                        <h3>Inicio</h3>
+                        <input type="time" class="entrada-hora">
+                    </div>
+                    <div class="barra-division"></div>
+                    <div class="inicio-fin">
+                        <h3>Fin</h3>
+                        <input type="time" class="entrada-hora">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn-guardar"><span>Guardar</span></button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
