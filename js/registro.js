@@ -22,11 +22,36 @@ const validar = () => {
         }
     }
     let espacios = llenos.find(element => element == 'vacio');
-    if (espacios == 'vacio') {
+
+        Swal.fire({
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            },
+            'icon': 'warning',
+            'title': 'No se ha registrado!',
+            'text': 'Por favor llene todos los espacios.'
+        });
+    } else {
+        alert("Sus datos fueron ingresados correctamente");
+        let usuario = {
+            'nombre': txtNombre.value,
+            'apellido': txtApellido.value,
+            'nacimiento': txtFecha.value,
+            'estatura': txtEstatura.value,
+            'sexo': txtSexo.value,
+            'correo': txtCorreo.value,
+            'pesoActual': txtPesoa.value,
+            'pesoMeta': txtPesoo.value,
+            'foto': ''
+        };
         alert("Por favor llene todos los espacios");
     } else {
         alert("Sus datos fueron ingresados correctamente");
         window.location.href = "/perfil.html";
+
     }
 
     /* let error = false;
