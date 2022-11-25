@@ -23,10 +23,34 @@ const validar = () => {
     }
     let espacios = llenos.find(element => element == 'vacio');
     if (espacios == 'vacio') {
-        alert("Por favor llene todos los espacios");
+        Swal.fire({
+            'icon': 'success',
+            'title': '¡No se ha registrado!',
+            'text': 'Por favor llene todos los espacios.'
+        });
     } else {
-        alert("Sus datos fueron ingresados correctamente");
-        window.location.href = "/perfil.html";
+        Swal.fire({
+            'icon': 'check',
+            'title': '¡Te has registrado!',
+            'text': 'Pronto podrás visualizar tu perfil.'
+
+        }).then((result) => {
+            window.location.href = '/perfil.html';
+        });
+        let usuario = {
+            'nombre': txtNombre.value,
+            'apellido': txtApellido.value,
+            'nacimiento': txtFecha.value,
+            'estatura': txtEstatura.value,
+            'sexo': txtSexo.value,
+            'correo': txtCorreo.value,
+            'pesoActual': txtPesoa.value,
+            'pesoMeta': txtPesoo.value,
+            'foto': ''
+        };
+        registrarDatos(usuario, '/registrar-usuario');
+
+
     }
 
     /* let error = false;

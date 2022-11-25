@@ -43,50 +43,49 @@
     </header>
     <section class="sct-registro">
         <h1>Perfil</h1>
-        <h2>Detalles del Perfil</h2>
-        <section class="sct-datos">
+        <section class="sct-datos sct-datos-p">
             <div class="datos-box">
 
                 <div class="resultado-box">
                     <span class="dato-id">Nombre</span>
-                    <span>Raúl</span>
+                    <span id="us-nombre"></span>
                 </div>
                 <div class="resultado-box">
                     <span class="dato-id">Apellido</span>
-                    <span>Álvarez</span>
+                    <span id="us-apellido"></span>
                 </div>
 
 
                 <div class="resultado-box">
                     <span class="dato-id">Fecha de Nacimiento</span>
-                    <span>05/11/1988</span>
+                    <span id="us-nacimiento"></span>
                 </div>
                 <div class="resultado-box">
                     <span class="dato-id">Edad</span>
-                    <span>34</span>
+                    <span id="us-edad"></span>
                 </div>
 
 
                 <div class="resultado-box">
                     <span class="dato-id">Estatura (M)</span>
-                    <span>1.73</span>
+                    <span id="us-estatura"></span>
                 </div>
                 <div class="resultado-box">
                     <span class="dato-id">Sexo</span>
-                    <span>Masculino</span>
+                    <span id="us-sexo"></span>
                 </div>
 
                 <div class="resultado-box">
                     <span class="dato-id">Correo Electrónico</span>
-                    <span>raula@gmail.com</span>
+                    <span id="us-correo"></span>
                 </div>
                 <div class="resultado-box">
                     <span class="dato-id">Peso Actual</span>
-                    <span>80 kg</span>
+                    <span id="us-peso-a"></span>
                 </div>
                 <div class="resultado-box">
                     <span class="dato-id">Peso a Alcanzar</span>
-                    <span>70 kg</span>
+                    <span id="us-peso-m"></span>
                 </div>
             </div>
         </section>
@@ -95,11 +94,11 @@
 
             <div class="resultado-box">
                 <span class="dato-id">IMC</span>
-                <span>26.7</span>
+                <span id="us-imc"></span>
             </div>
             <div class="resultado-box">
                 <span class="dato-id">Clasificación</span>
-                <span>Sobrepeso</span>
+                <span id="us-imc-cat"></span>
             </div>
 
         </section>
@@ -110,6 +109,11 @@
 
         </section>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/servicios-generales.js"></script>
+    <script src="/js/usuario.js"></script>
 </body>
 
 </html>

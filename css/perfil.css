@@ -1,9 +1,16 @@
 .sct-calculos {
-    height: 40vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.sct-datos-p {
+    margin-top: 50px;
+    height: 110%;
+    display: flex;
+    justify-content: center;
 }
 
 .resultado-box {

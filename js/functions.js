@@ -7,4 +7,4 @@ const abrirNav = () => {
     } else {
         links.style.display = "block";
     }
-}
+};
