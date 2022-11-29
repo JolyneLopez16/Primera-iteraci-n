@@ -52,26 +52,26 @@
         <div class="division-superior">
             <div class="fecha">
                 <h2>Fecha</h2>
-                <input type="date" class="entrada-fecha">
+                <input class="required" type="date" id="fecha">
             </div>
             <div class="tipo-actividad">
                 <h2>Tipo de actividad</h2>
                 <div class="check">
                     <div class="tipo">
-                        <input type="checkbox">
+                        <input id="opt-1" class="required" type="checkbox">
                         <h3>Natación</h3>
                     </div>
                     <div class="tipo">
-                        <input type="checkbox">
+                        <input id="opt-2" class="required" type="checkbox">
                         <h3>Ciclismo</h3>
                     </div>
                     <div class="tipo">
-                        <input type="checkbox">
+                        <input id="opt-3" class="required" type="checkbox">
                         <h3>Atletismo</h3>
                     </div>
                     <a href="/RegistrarTipoActividadFisica.html">
                         <div>
-                            <button class="btn-tipo-ac"><span>Agregar Tipo</span></button>
+                            <button class="btn-tipo-ac" id="btn-tipo-ac"><span>Agregar Tipo</span></button>
                         </div>
                     </a>
                 </div>
@@ -85,20 +85,22 @@
                 <div class="intervalo-hora">
                     <div class="inicio-fin">
                         <h3>Inicio</h3>
-                        <input type="time" class="entrada-hora">
+                        <input class="required" id="hora-incio" type="time" class="entrada-hora">
                     </div>
                     <div class="barra-division"></div>
                     <div class="inicio-fin">
                         <h3>Fin</h3>
-                        <input type="time" class="entrada-hora">
+                        <input class="required" id="hora-final" type="time" class="entrada-hora">
                     </div>
                 </div>
             </div>
             <div>
-                <button class="btn-guardar"><span>Guardar</span></button>
+                <button class="btn-guardar" id="btn-guardar"><span>Guardar</span></button>
             </div>
         </div>
     </section>
+
+    <script src="/js/registroActividad.js"></script>
 </body>
 
 </html>

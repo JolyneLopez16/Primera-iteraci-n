@@ -7,6 +7,7 @@ const txtSexo = document.getElementById("txt-sexo");
 const txtPesoa = document.getElementById("txt-pesoa");
 const txtPesoo = document.getElementById("txt-pesoo");
 const btnRegistrar = document.getElementById("btn-registrar");
+const btnActividadFisica = document.getElementById("btn-guardar")
 
 const validar = () => {
 
