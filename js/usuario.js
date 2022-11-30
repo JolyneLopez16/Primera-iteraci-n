@@ -75,8 +75,6 @@ const mostrarDatos = async() => {
     pPesoMeta.innerHTML = datosUsuario[datosUsuario.length - 1].pesoMeta;
     pIMC.innerHTML = imc;
     pIMCCat.innerHTML = catIMC;
-
-
 }
 
 inicializarLista();
