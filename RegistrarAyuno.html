@@ -50,17 +50,17 @@
             <h2>Añade una nueva entrada</h2>
         </div>
         <div class="fondo-intervalo">
-            <div class="etiqueta-inicio">
+            <div class="etiqueta-inicio requerido" id="txt-inicio">
                 <h2>Inicio</h2>
                 <div>
-                    <input type="datetime" class="fondo-entrada-inicio-ayuno">
+                    <input type="datetime" class="fondo-entrada-inicio-ayuno requerido">
                 </div>
             </div>
             <div class="barra-division"></div>
-            <div class="etiqueta-fin">
+            <div class="etiqueta-fin requerido" id="txt-fin">
                 <h2>Fin</h2>
                 <div>
-                    <input type="datetime" class="fondo-entrada-fin-ayuno">
+                    <input type="datetime" class="fondo-entrada-fin-ayuno requerido">
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
             <div class="etiqueta-plan-ayuno">
                 <h2>Plan de ayuno</h2>
             </div>
-            <div class="botones-planes">
+            <div class="botones-planes" id="btn-plan">
                 <button class="plan"><span>14:10</span></button>
                 <button class="plan"><span>16:8</span></button>
                 <button class="plan"><span>18:6</span></button>
@@ -81,10 +81,12 @@
                 <h2>15h. 4min.</h2>
             </div>
             <div>
-                <button class="btn-guardar"><span>Guardar</span></button>
+                <button class="btn-guardar" id="btn-ayuno"><span>Guardar</span></button>
             </div>
         </div>
     </section>
+
+    <script src="js/registroAyuno.js"></script>
 </body>
 
 </html>
