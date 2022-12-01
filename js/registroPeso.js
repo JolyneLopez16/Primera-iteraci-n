@@ -7,17 +7,17 @@ const inFechaPeso = document.getElementById('datePicker');
 const btnGuardarP = document.getElementById('btn-guardar-peso');
 
 
-const obtenerUltimoId = async() => {
+const obtenerUltimoCorreo = async() => {
     datosUsuario = await obtenerListaDatos('/obtener-usuario');
-    let uId = datosUsuario[datosUsuario.length - 1]._id;
-    String(uId);
-    console.log(uId);
-
+    let uId = datosUsuario[datosUsuario.length - 1].correo;
     return uId;
 }
 
+const obtenerUltimaFecha = async() => {
+    registrosPesos = await obtenerListaDatos('/obtener-')
+}
 
-const validar = () => {
+const validar = async() => {
     let error = false;
     let camposRequeridos = document.querySelectorAll('.requerido');
 
@@ -47,17 +47,20 @@ const validar = () => {
             'peso': inPeso.value,
             'fecha': inFechaPeso.value
         };
-
         let pesoActual = {
-            '_id': obtenerUltimoId,
+            'correo': await obtenerUltimoCorreo(),
             'pesoActual': inPeso.value
         }
-        console.log(peso);
+
+        if (peso.fecha < Date)
+            registrarDatos(pesoActual, '/modificar-peso');
         console.log(pesoActual);
         registrarDatos(peso, '/registrar-pesos');
-        registrarDatos(pesoActual, '/modificar-peso')
+
 
     }
 }
+
+
 
 btnGuardarP.addEventListener('click', validar)
