@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/registro.css">
     <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="css/formularios.css">
 </head>
 
 <body>
@@ -45,13 +46,33 @@
         </div>
     </header>
     <section class="sct-registro">
-        <h1>Registro de Aplicación</h1>
+        <!-- <div class="form">
+            <div class="form-head">
+                <h1>Registro de Aplicación</h1>
+            </div>
+            <div class="form-content">
+                <h3>Ingrese la información que se le solicita</h3>
+                <p>No olvide llenar todos los espacios.</p>
+                <div class="form-input">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" min="0" class="required" name="nombre" id="txt-nombre">
+                </div>
+                <div class="form-input">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="required" min="0" name="apellido" id="txt-apellido">
+                </div>
+                <div class="form-input">
+                    <label for="fechaN">Fecha de nacimiento:</label>
+                    <input type="date" class="required" name="fechaN" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
+                </div>
+                <button class="btn-form" id="btn-guardar-peso">Guardar</button>
+            </div>
+        </div> -->
+
         <section class="sct-datos">
             <div class="datos-box">
-
-                <input type="text" id="txt-nombre" class="required" placeholder="Nombre">
-                <input type="text" id="txt-apellido" class="required" placeholder="Apellido">
-
+                <input type="text" min="0" class="required" name="nombre" placeholder="Nombre" id="txt-nombre">
+                <input type="text" class="required" min="0" name="apellido" placeholder="Apellido" id="txt-apellido">
 
                 <input type="date" class="required" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
 

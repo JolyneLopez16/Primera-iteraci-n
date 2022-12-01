@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/opciones.css">
-    <link rel="stylesheet" href="css/RegistrarPeso.css">
+    <link rel="stylesheet" href="css/formularios.css">
 </head>
 
 <body>
@@ -44,12 +44,27 @@
             </div>
         </div>
     </header>
-    <section id="sct-registrar-peso">
-        <div class="titulos-registrar-peso">
-            <h1>Registrar peso</h1>
-            <h2>Añade una nueva medición de tu peso</h2>
+    <section class="sct-registrar">
+        <div class="form">
+            <div class="form-head">
+                <h1>Registro de Peso</h1>
+            </div>
+            <div class="form-content">
+                <h3>Ingrese la información que se le solicita</h3>
+                <p>No olvide llenar todos los espacios.</p>
+                <div class="form-input">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" min="0" name="fecha" id="datePicker">
+                </div>
+                <div class="form-input">
+                    <label for="peso">Peso:</label>
+                    <input type="number" min="0" name="peso" id="inp-peso" placeholder="kg">
+                </div>
+                <button class="btn-form" id="btn-guardar-peso">Guardar</button>
+            </div>
         </div>
-        <div class="fondo-peso">
+
+        <!-- <div class="fondo-peso">
             <div class="etiqueta-peso">
                 <h2>Peso</h2>
             </div>
@@ -68,7 +83,7 @@
         </div>
         <div>
             <button type="button" class="btn-guardar-peso" id="btn-guardar-peso"><span>Guardar</span></button>
-        </div>
+        </div> -->
     </section>
 
 

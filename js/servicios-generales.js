@@ -24,5 +24,4 @@ const obtenerListaDatos = async(pEndPoint) => {
     });
 
     return listaDatos;
-    ``
 };
