@@ -50,17 +50,23 @@
             <h2>Añade una nueva entrada</h2>
         </div>
         <div class="fondo-intervalo">
-            <div class="etiqueta-inicio requerido" id="txt-inicio">
+            <div>
                 <h2>Inicio</h2>
                 <div>
-                    <input type="datetime" class="fondo-entrada-inicio-ayuno requerido">
+                    <label for="txt-inicio-fecha">Fecha</label>
+                    <input type="text" id="txt-inicio-fecha" class="requerido">
+                    <label for="txt-inicio-hora">Hora</label>
+                    <input type="text" id="txt-inicio-hora" class="requerido">
                 </div>
             </div>
             <div class="barra-division"></div>
-            <div class="etiqueta-fin requerido" id="txt-fin">
+            <div>
                 <h2>Fin</h2>
                 <div>
-                    <input type="datetime" class="fondo-entrada-fin-ayuno requerido">
+                    <label for="txt-fin-fecha">Fecha</label>
+                    <input type="text" id="txt-fin-fecha" class="requerido">
+                    <label for="txt-fin-hora">Hora</label>
+                    <input type="text" id="txt-fin-hora" class="requerido">
                 </div>
             </div>
         </div>
@@ -68,12 +74,18 @@
             <div class="etiqueta-plan-ayuno">
                 <h2>Plan de ayuno</h2>
             </div>
-            <div class="botones-planes" id="btn-plan">
-                <button class="plan"><span>14:10</span></button>
-                <button class="plan"><span>16:8</span></button>
-                <button class="plan"><span>18:6</span></button>
-                <button class="plan"><span>20:4</span></button>
+
+            <div>
+                <label for="slt-planes">Planes</label>
+                <select id="slt-planes" class="requerido">
+                    <option value="">-- Seleccione un plan --</option>
+                    <option value="14:10">14:10</option>
+                    <option value="16:8">16:8</option>
+                    <option value="18:6">18:6</option>
+                    <option value="20:4">20:4</option>
+                </select>
             </div>
+
         </div>
         <div class="fondo-haz-ayunado">
             <div>
@@ -85,7 +97,9 @@
             </div>
         </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/servicios-generales.js"></script>
     <script src="js/registroAyuno.js"></script>
 </body>
 

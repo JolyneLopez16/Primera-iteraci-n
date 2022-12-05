@@ -88,30 +88,6 @@ h3 {
     margin: 8px;
 }
 
-.entrada-tipo {
-    width: 250px;
-    height: 40px;
-    background-color: #2c794f;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 20pt;
-    text-align: center;
-    margin: 8px;
-}
-
-.entrada-categoria {
-    width: 250px;
-    height: 40px;
-    background-color: #2c794f;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 20pt;
-    text-align: center;
-    margin: 8px;
-}
-
 .entrada-pasos {
     width: 250px;
     height: 80px;

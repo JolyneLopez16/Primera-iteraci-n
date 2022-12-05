@@ -108,8 +108,9 @@ p {
     margin: 8px;
 }
 
-.fondo-entrada-peso {
-    /* display: flex;
+
+/*.fondo-entrada-peso {
+     display: flex;
     flex-direction: row;
     align-items: center;
     color: #fff;
@@ -119,8 +120,8 @@ p {
     background-color: #003753;
     border-radius: 40px;
     justify-content: center;
-    margin: 8px; */
-}
+    margin: 8px; 
+}*/
 
 .entrada-peso {
     display: flex;
