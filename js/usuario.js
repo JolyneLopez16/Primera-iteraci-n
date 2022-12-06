@@ -12,6 +12,7 @@ const pPesoMeta = document.querySelector('#us-peso-m');
 const pIMC = document.querySelector('#us-imc');
 const pIMCCat = document.querySelector('#us-imc-cat');
 
+
 const calcularIMC = (peso, estatura) => {
     let imc = peso / Math.pow(estatura, 2);
 

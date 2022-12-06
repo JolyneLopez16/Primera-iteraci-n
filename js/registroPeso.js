@@ -13,9 +13,6 @@ const obtenerUltimoCorreo = async() => {
     return uId;
 }
 
-const obtenerUltimaFecha = async() => {
-    registrosPesos = await obtenerListaDatos('/obtener-')
-}
 
 const validar = async() => {
     let error = false;
@@ -42,6 +39,8 @@ const validar = async() => {
             'title': '¡Has ingresado tu nuevo peso correctamente!',
             'text': 'Podés revisarlo en tu perfil.'
 
+        }).then(() => {
+            location.reload();
         });
         let peso = {
             'peso': inPeso.value,
@@ -51,16 +50,12 @@ const validar = async() => {
             'correo': await obtenerUltimoCorreo(),
             'pesoActual': inPeso.value
         }
-
-        if (peso.fecha < Date)
-            registrarDatos(pesoActual, '/modificar-peso');
-        console.log(pesoActual);
+        registrarDatos(pesoActual, '/modificar-peso');
         registrarDatos(peso, '/registrar-pesos');
 
 
     }
 }
-
 
 
 btnGuardarP.addEventListener('click', validar)

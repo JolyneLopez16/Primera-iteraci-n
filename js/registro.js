@@ -6,6 +6,7 @@ const txtApellido = document.getElementById("txt-apellido");
 const txtSexo = document.getElementById("txt-sexo");
 const txtPesoa = document.getElementById("txt-pesoa");
 const txtPesoo = document.getElementById("txt-pesoo");
+const inpFoto = document.getElementById("inp-img")
 const btnRegistrar = document.getElementById("btn-registrar");
 const btnActividadFisica = document.getElementById("btn-guardar")
 
@@ -47,7 +48,7 @@ const validar = () => {
             'correo': txtCorreo.value,
             'pesoActual': txtPesoa.value,
             'pesoMeta': txtPesoo.value,
-            'foto': ''
+            'foto': inpFoto
         };
         registrarDatos(usuario, '/registrar-usuario');
 
