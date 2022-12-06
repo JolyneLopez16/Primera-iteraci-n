@@ -1,6 +1,8 @@
-const txtInicio = document.getElementById('txt-inicio');
-const txtFin = document.getElementById('txt-fin');
-const btnAyuno = document.getElementById('btn-ayuno');
+const txtInicioFecha = document.getElementById('txt-inicio-fecha');
+const txtFinFecha = document.getElementById('txt-fin-fecha');
+const txtInicioHora = document.getElementById('txt-inicio-hora');
+const txtFinHora = document.getElementById('txt-fin-hora');
+const btnGuardarAyuno = document.getElementById('btn-ayuno');
 
 const validar = () => {
     let error = false;
@@ -17,20 +19,18 @@ const validar = () => {
 
     if (error) {
         Swal.fire({
-            'icon': 'warning',
-            'title': '¡No se ha registrado el cambio!',
-            'text': 'Por favor llene todos los espacios.'
-        });
+            'title': 'Registro incorrecto',
+            'text': 'Por favor complete los campos resaltados',
+            'icon': 'warning'
+        })
     } else {
         Swal.fire({
-            'icon': 'success',
-            'title': '¡Has ingresado tu nuevo peso correctamente!',
-            'text': 'Podés revisarlo en tu perfil.'
-
-
-        });
-    }
-
+                'title': 'Registro exitoso',
+                'text': 'Se ha registrado correctamente',
+                'icon': 'success'
+            })
+            /*registrarAyunoNuevo()*/
+    };
 }
 
-btnAyuno.addEventListener('click', validar)
+btnGuardarAyuno.addEventListener('click', validar)

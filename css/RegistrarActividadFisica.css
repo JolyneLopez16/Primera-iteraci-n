@@ -51,21 +51,9 @@ h3 {
     margin: 25px;
     width: 500px;
     height: 250px;
-    border-radius: 30px;
     border: none;
     background-color: #006b97;
     justify-content: space-around;
-}
-
-.entrada-fecha {
-    margin: 5px;
-    width: 150px;
-    height: 50px;
-    border-radius: 30px;
-    border: none;
-    background-color: #003753;
-    color: #fff;
-    text-align: center;
 }
 
 .tipo-actividad {
@@ -75,22 +63,9 @@ h3 {
     margin: 5px;
     width: 1200px;
     height: 150px;
-    border-radius: 30px;
     border: none;
     background-color: #006b97;
     justify-content: space-around;
-}
-
-.tipo {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-.check {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
 }
 
 .division-inferior {
@@ -111,7 +86,6 @@ h3 {
     margin: 5px;
     width: 750px;
     height: 200px;
-    border-radius: 50px;
     border: none;
     background-color: #006b97;
     justify-content: space-around;
@@ -132,17 +106,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.entrada-hora {
-    margin: 5px;
-    width: 150px;
-    height: 50px;
-    border-radius: 30px;
-    border: none;
-    background-color: #003753;
-    color: #fff;
-    text-align: center;
 }
 
 .barra-division {

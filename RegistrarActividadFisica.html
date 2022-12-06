@@ -46,28 +46,25 @@
     </header>
     <section id="sct-registrar-actividad-fisica">
         <div class="titulos-registrar-actividad-fisica">
-            <h1>Registrar actividad fisica</h1>
+            <h1>Registrar actividad física</h1>
             <h2>Añade una nueva entrada</h2>
         </div>
         <div class="division-superior">
             <div class="fecha">
                 <h2>Fecha</h2>
-                <input class="required" type="date" id="fecha">
+                <input class="requerido" type="text" id="fecha">
             </div>
             <div class="tipo-actividad">
                 <h2>Tipo de actividad</h2>
-                <div class="check">
-                    <div class="tipo">
-                        <input id="opt-1" class="required" type="checkbox">
-                        <h3>Natación</h3>
-                    </div>
-                    <div class="tipo">
-                        <input id="opt-2" class="required" type="checkbox">
-                        <h3>Ciclismo</h3>
-                    </div>
-                    <div class="tipo">
-                        <input id="opt-3" class="required" type="checkbox">
-                        <h3>Atletismo</h3>
+                <div>
+                    <div>
+                        <label for="slt-tipo-actividad">Tipo</label>
+                        <select id="slt-tipo-actividad" class="requerido">
+                            <option value="">-- Seleccione un tipo de actividad --</option>
+                            <option value="Natación">Natación</option>
+                            <option value="Ciclismo">Ciclismo</option>
+                            <option value="Atletismo">Atletismo</option>
+                        </select>
                     </div>
                     <a href="/RegistrarTipoActividadFisica.html">
                         <div>
@@ -75,8 +72,6 @@
                         </div>
                     </a>
                 </div>
-
-
             </div>
         </div>
         <div class="division-inferior">
@@ -85,12 +80,12 @@
                 <div class="intervalo-hora">
                     <div class="inicio-fin">
                         <h3>Inicio</h3>
-                        <input class="required" id="hora-incio" type="time" class="entrada-hora">
+                        <input class="requerido" id="hora-inicio" type="text">
                     </div>
                     <div class="barra-division"></div>
                     <div class="inicio-fin">
                         <h3>Fin</h3>
-                        <input class="required" id="hora-final" type="time" class="entrada-hora">
+                        <input class="requerido" id="hora-final" type="text">
                     </div>
                 </div>
             </div>
@@ -99,7 +94,9 @@
             </div>
         </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/servicios-generales.js"></script>
     <script src="/js/registroActividad.js"></script>
 </body>
 
