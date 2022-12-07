@@ -26,13 +26,13 @@ const validar = () => {
     let espacios = llenos.find(element => element == 'vacio');
     if (espacios == 'vacio') {
         Swal.fire({
-            'icon': 'success',
+            'icon': 'warning',
             'title': '¡No se ha registrado!',
             'text': 'Por favor llene todos los espacios.'
         });
     } else {
         Swal.fire({
-            'icon': 'check',
+            'icon': 'success',
             'title': '¡Te has registrado!',
             'text': 'Pronto podrás visualizar tu perfil.'
 

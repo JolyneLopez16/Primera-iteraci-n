@@ -10,9 +10,8 @@
     />
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/registro.css">
-    <link rel="stylesheet" href="/css/input.css">
     <link rel="stylesheet" href="css/formularios.css">
+    <link rel="stylesheet" href="/css/registro.css">
 </head>
 
 <body>
@@ -46,60 +45,64 @@
         </div>
     </header>
     <section class="sct-registro">
-        <!-- <div class="form">
+        <div class="form">
             <div class="form-head">
                 <h1>Registro de Aplicación</h1>
             </div>
+            <div class="form-comments">
+                <div class="comment-box">
+                    <h3>Ingrese la información que se le solicita</h3>
+                    <p>No olvide llenar todos los espacios.</p>
+                </div>
+
+            </div>
             <div class="form-content">
-                <h3>Ingrese la información que se le solicita</h3>
-                <p>No olvide llenar todos los espacios.</p>
+
                 <div class="form-input">
                     <label for="nombre">Nombre:</label>
                     <input type="text" min="0" class="required" name="nombre" id="txt-nombre">
+                </div>
+                <div class="form-input gender">
+                    <select name="Sexo" class="required" id="txt-sexo">
+                        <option value="Sexo" disabled selected>Sexo</option>
+                        <option id="opt-masc" value="Masculino">Masculino</option>
+                        <option id="opt-fem" value="Femenino">Femenino</option>
+                    </select>
+
+                </div>
+                <div class="form-input">
+                    <label for="fechaN">Fecha de nacimiento:</label>
+                    <input type="date" class="required" name="fechaN" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
                 </div>
                 <div class="form-input">
                     <label for="apellido">Apellido:</label>
                     <input type="text" class="required" min="0" name="apellido" id="txt-apellido">
                 </div>
                 <div class="form-input">
-                    <label for="fechaN">Fecha de nacimiento:</label>
-                    <input type="date" class="required" name="fechaN" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
+                    <label for="estatura">Estatura:</label>
+                    <input type="number" class="required" name="estatura" id="txt-estatura">
                 </div>
-                <button class="btn-form" id="btn-guardar-peso">Guardar</button>
+
+                <div class="form-input">
+                    <label for="correo-electronico">Correo electrónico:</label>
+                    <input type="email" class="required" name="correo-electronico" id="txt-correo">
+                </div>
+                <div class="form-input">
+                    <label for="peso-actual">Peso Actual (Kg):</label>
+                    <input type="number" class="required" name="peso-actual" id="txt-pesoa">
+                </div>
+                <div class="form-input">
+                    <label for="peso-meta">Peso Actual (Kg):</label>
+                    <input type="number" class="required" name="peso-meta" id="txt-pesoo">
+                </div>
+                <div class="perfil"><label>Foto de perfil:</label><input class="inp-foto" type="file" name="foto-perfil" id="foto-perfil"></div>
+
+                <button class="btn-form" id="btn-registrar">Registrar</button>
             </div>
-        </div> -->
-
-        <section class="sct-datos">
-            <div class="datos-box">
-                <input type="text" min="0" class="required" name="nombre" placeholder="Nombre" id="txt-nombre">
-                <input type="text" class="required" min="0" name="apellido" placeholder="Apellido" id="txt-apellido">
-
-                <input type="date" class="required" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
 
 
-                <input type="number" class="required" id="txt-estatura" min="0" placeholder="Estatura (M)">
-                <select name="Sexo" class="required" id="txt-sexo">
-                    <option value="Sexo" disabled selected>Sexo</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                </select>
+        </div>
 
-
-                <input type="email" class="required" name="Correo" placeholder="Correo electrónico" id="txt-correo">
-                <input type="number" class="required" min="0" id="txt-pesoa" placeholder="Peso Actual (Kg)">
-                <input id="txt-pesoo" class="required" min="0" type="number" placeholder="Peso a alcanzar (Kg)">
-            </div>
-        </section>
-        <section class="sct-foto-perfil">
-
-
-            <div class="img-input">
-                <label for="">Ingrese Foto</label>
-                <input type="file" id="inp-img" src="/img/insertar-img.png" height="150px" width="150px" alt="Agrege su Foto de Perfil">
-            </div>
-            <button class="btn-registro" id="btn-registrar" type="button"><span>Registrar</span></button>
-
-        </section>
     </section>
 
 
@@ -107,7 +110,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/servicios-generales.js"></script>
     <script src="/js/registro.js"></script>
-
+    <script src="/js/functions.js"></script>
 </body>
 
 </html>

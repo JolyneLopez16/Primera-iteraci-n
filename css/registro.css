@@ -1,102 +1,55 @@
 .sct-registro {
-    margin-top: 30px;
-    height: 50vh;
-}
-
-.btn-registro {
-    width: 300px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: #003735;
-}
-
-.btn-registro:hover {
-    background-color: #6dab5d;
-    cursor: pointer;
-}
-
-.btn-registro span {
-    color: #fff;
-    font-size: 20pt;
-}
-
-.sct-datos {
-    margin-top: 50px;
-    height: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: auto;
     display: flex;
     justify-content: center;
 }
 
-.datos-box {
+h1 {
+    padding-bottom: 15px;
+}
+
+.form-content {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form-comments {
+    margin: 20px 30px;
+    display: flex;
+}
+
+.comment-box {
+    margin-top: 20px;
+}
+
+.inp-foto {
+    margin-top: 10px;
+}
+
+#txt-sexo {
+    font-size: 16px;
+    width: 70px;
+    height: 40px;
+    border: none;
+    background-color: #0b542f32;
+    border-radius: 3px;
+}
+
+.perfil {
+    margin-left: 5px;
+    margin-top: 30px;
     height: 100%;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.datos-box input:nth-child(9) {
-    justify-self: center;
-}
-
-.sct-datos input {
-    width: 300px;
-    height: 100px;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-    background-color: #003735;
-    color: #fff;
-    padding-left: 15px;
-}
-
-.sct-datos input::placeholder {
-    color: #fff;
-}
-
-.sct-datos option {
-    color: #fff;
-}
-
-.sct-datos input::-webkit-calendar-picker-indicator {
-    background-image: url(/img/calendar-icon.svg);
-}
-
-.sct-datos select {
-    width: 315px;
-    height: 104px;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-    background-color: #003735;
-    color: #fff;
-    padding-left: 15px;
-}
-
-.sct-foto-perfil {
-    height: 35vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.sct-foto-perfil label {
-    font-size: 26px;
-    font-weight: 600;
+.gender {
+    flex-direction: row;
 }
 
-.img-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    border: 1px #000 dashed;
-    box-shadow: 0px 6px 25px -8px rgba(0, 0, 0, 0.72);
+#btn-registrar {
+    margin-left: 25%;
 }
