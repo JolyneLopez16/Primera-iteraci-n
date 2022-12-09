@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/opciones.css">
     <link rel="stylesheet" href="css/RegistrarActividadFisica.css">
+    <link rel="stylesheet" href="/css/formularios.css">
 </head>
 
 <body>
@@ -44,56 +45,44 @@
             </div>
         </div>
     </header>
-    <section id="sct-registrar-actividad-fisica">
-        <div class="titulos-registrar-actividad-fisica">
-            <h1>Registrar actividad física</h1>
-            <h2>Añade una nueva entrada</h2>
-        </div>
-        <div class="division-superior">
-            <div class="fecha">
-                <h2>Fecha</h2>
-                <input class="requerido" type="text" id="fecha">
+    <section class="sct-registrar">
+        <div class="form">
+            <div class="form-head">
+                <h1>Registro de Actividad Física</h1>
             </div>
-            <div class="tipo-actividad">
-                <h2>Tipo de actividad</h2>
-                <div>
-                    <div>
-                        <label for="slt-tipo-actividad">Tipo</label>
-                        <select id="slt-tipo-actividad" class="requerido">
-                            <option value="">-- Seleccione un tipo de actividad --</option>
-                            <option value="Natación">Natación</option>
+            <div class="form-content">
+                <h3>Ingrese la información que se le solicita</h3>
+                <p>No olvide llenar todos los espacios.</p>
+                <div class="form-input">
+                    <label for="fecha">Fecha:</label>
+                    <input class="requerido" type="date" min="0" name="fecha" id="fecha-actividad">
+                </div>
+
+                <div class="form-input row">
+                    <div class="form-inp-row"><label for="tipo-actividad">Tipo:</label>
+                        <select class="requerido" type="text" min="0" name="tipo-actividad" id="slt-tipo-actividad">
+                        <option selected disabled>-- Seleccione una actividad física --</option>
+                        <option value="Natación">Natación</option>
                             <option value="Ciclismo">Ciclismo</option>
                             <option value="Atletismo">Atletismo</option>
-                        </select>
+                    </select>
                     </div>
                     <a href="/RegistrarTipoActividadFisica.html">
-                        <div>
-                            <button class="btn-tipo-ac" id="btn-tipo-ac"><span>Agregar Tipo</span></button>
-                        </div>
+                        <button class="btn-form registrar" id="btn-registrar">Agregar nueva</button>
                     </a>
                 </div>
-            </div>
-        </div>
-        <div class="division-inferior">
-            <div class="hora">
-                <h2>Hora</h2>
-                <div class="intervalo-hora">
-                    <div class="inicio-fin">
-                        <h3>Inicio</h3>
-                        <input class="requerido" id="hora-inicio" type="text">
-                    </div>
-                    <div class="barra-division"></div>
-                    <div class="inicio-fin">
-                        <h3>Fin</h3>
-                        <input class="requerido" id="hora-final" type="text">
+                <div class="form-input">
+                    <label>Hora:</label>
+                    <div class="form-times">
+                        <input class="requerido" type="time" min="0" name="horaI" placeholder="Fecha" id="hora-inicio">
+                        <input class="requerido" type="time" min="0" name="horaF" placeholder="Hora" id="hora-final">
                     </div>
                 </div>
-            </div>
-            <div>
-                <button class="btn-guardar" id="btn-guardar"><span>Guardar</span></button>
+                <button class="btn-form" id="btn-ayuno">Registrar</button>
             </div>
         </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/servicios-generales.js"></script>

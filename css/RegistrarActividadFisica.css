@@ -1,309 +1,54 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(237, 234, 234);
+.form-times {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 36%;
 }
 
-body section {
-    margin: 8px;
+.form-times input {
+    width: 100px !important;
 }
 
-h1 {
-    font-size: 32pt;
-    font-weight: bold;
-    margin: 75px;
-    text-align: center;
+.form {
+    height: auto !important;
 }
 
-h2 {
-    font-size: 26pt;
-    margin: 5px;
-    text-align: center;
+.registrar {
+    width: 80px !important;
+    height: auto !important;
 }
 
-h3 {
-    font-size: 18pt;
-    margin: 5px;
-    text-align: center;
+.row {
+    display: flex;
+    flex-direction: row !important;
 }
 
-#sct-registrar-actividad-fisica {
+.form-inp-row {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.division-superior {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 900px;
-    height: 300px;
-    justify-content: space-around;
-    margin: 8px;
-    padding: 8px;
-}
-
-.fecha {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 25px;
-    width: 500px;
-    height: 250px;
-    border: none;
-    background-color: #006b97;
-    justify-content: space-around;
-}
-
-.tipo-actividad {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 5px;
-    width: 1200px;
-    height: 150px;
-    border: none;
-    background-color: #006b97;
-    justify-content: space-around;
-}
-
-.division-inferior {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 900px;
-    height: 300px;
-    justify-content: space-around;
-    margin: 8px;
-    padding: 8px;
-}
-
-.hora {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 5px;
-    width: 750px;
-    height: 200px;
-    border: none;
-    background-color: #006b97;
-    justify-content: space-around;
-}
-
-.intervalo-hora {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 5px;
-    width: 350px;
-    height: 180px;
-    border: none;
-    justify-content: space-around;
-}
-
-.inicio-fin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.barra-division {
-    width: 2px;
-    height: 120px;
-    background-color: #000;
-}
-
-.btn-guardar {
-    margin: 35px;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: #003753;
-}
-
-.btn-guardar:hover {
-    background-color: #00aae7;
-    cursor: pointer;
-}
-
-.btn-guardar span {
-    color: #fff;
-    font-weight: bold;
-    font-size: 20pt;
-}
-
-
-/*   ---------------------------------   */
-
-
-/* Navbar container */
-
-.navbar {
-    background-color: #003735;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    height: 7vh;
-    padding: 0 30px;
-}
-
-.nav-links {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-/* Logo Navbar */
-
-.navbar img {
-    width: 100px;
-    height: 100%;
-    object-fit: contain;
-}
-
-
-/* Links dentro de Nav-Links */
-
-.nav-links a {
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-/* Dropdown */
-
-.dropdown {
-    overflow: hidden;
-    font-size: 16px;
-}
-
-a:hover {
-    color: #c7e76d;
-}
-
-
-/* Dropdown button */
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: inherit;
-    margin: 0;
-}
-
-.nav-links a:hover {
-    box-sizing: content-box;
-    border-bottom: 3px solid #fff;
-}
-
-
-/* Dropdown */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #005241;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-
-/* Links dentro del dropdown */
-
-.dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-
-/* Agrega Fondo al Nav */
-
-.dropdown-content a:hover {
-    background-color: #00aae7;
-}
-
-
-/* Enseña el submenu*/
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-h1 {
-    size: 32pt;
-}
-
-h2 {
-    size: 26pt;
-    padding: 10px
-}
-
-p {
-    size: 13pt;
-}
-
-#sct-peso {
-    padding: 10px;
     justify-content: center;
-    display: flex;
 }
 
-table {
-    border: 2px solid #000;
-    border-collapse: collapse;
-    width: 70%;
-}
-
-th {
-    border: 1px solid #000;
-    border-collapse: collapse;
-    padding: 25px;
-    font-size: 20pt;
-}
-
-td {
-    border: 1px solid #000;
-    border-collapse: collapse;
-    padding: 25px;
-    font-size: 13pt;
-}
-
-tr {
+.form-inp-row select {
+    margin-top: 10px;
+    width: 100%;
     text-align: center;
-    font-size: 20pt;
-}
-
-.img-peso {
-    margin-left: 10%;
-    padding: 10%;
-}
-
-.btn-tipo-ac {
-    border-radius: 10px;
-    margin-top: 3px;
-    width: 100px;
     height: 30px;
-    border: none;
-    background-color: #003753;
-    color: #fff;
-    margin-left: 20px;
+    border-radius: 3px;
+    background-color: #0b542f32;
 }
 
-.btn-tipo-ac:hover {
-    background-color: #00aae7;
-    cursor: pointer;
+.form-content {
+    margin-top: 25px !important;
+}
+
+#fecha-actividad {
+    width: 16% !important;
+}
+
+.form-input button {
+    margin-left: 100px;
+    width: 140px !important;
+    height: 30px !important;
+    padding: 5px;
 }
