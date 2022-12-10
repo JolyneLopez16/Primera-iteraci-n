@@ -53,20 +53,25 @@
             <div class="division-izquierda">
                 <div class="nombre">
                     <h2>Nombre</h2>
-                    <input type="text" class="entrada-nombre">
+                    <input id="inp-nombre" type="text" class="requerido">
                 </div>
                 <div>
-                    <button class="btn-guardar"><span>Guardar</span></button>
+                    <button id="btn-guardar-tipo" class="btn-guardar"><span>Guardar</span></button>
                 </div>
             </div>
             <div class="division-derecha">
                 <div class="icono">
                     <h2>Icono</h2>
-                    <input type="image" class="entrada-icono">
+                    <input id="inp-icono" type="image" class="requerido">
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/servicios-generales.js"></script>
+    <script src="js/registroTipoActividad.js"></script>
 </body>
 
 </html>
