@@ -5,8 +5,8 @@ const mostrarTabla = () => {
     cuerpoTabla.innerHTML = '';
     listaActividades.forEach(actividad => {
         let fila = cuerpoTabla.insertRow();
-        fila.insertCell().innerText = actividad.fecha;
         fila.insertCell().innerText = actividad.tipo;
+        fila.insertCell().innerText = actividad.fecha;
 
     });
 };
