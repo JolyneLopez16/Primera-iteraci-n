@@ -1,5 +1,5 @@
 const inCondicion = document.getElementById('inp-condicion');
-const inTipoObjetivo = document.getElementById('slt-tipo-objetivo');
+const inTipo = document.getElementById('slt-tipo');
 const btnGuardarObjetivo = document.getElementById('btn-guardar-objetivo');
 
 const validar = async() => {
