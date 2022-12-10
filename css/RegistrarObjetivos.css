@@ -64,33 +64,6 @@ h3 {
     justify-content: space-around;
 }
 
-.entrada-condicion {
-    width: 250px;
-    height: 40px;
-    background-color: #003753;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 20pt;
-    text-align: center;
-    margin: 8px;
-}
-
-.entrada-tipo {
-    width: 20px;
-    height: 20px;
-    background-color: #a7a7a7;
-    border-radius: 5px;
-    border-color: #737373;
-    margin: 8px;
-}
-
-.tipo {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
 .btn-guardar {
     margin: 35px;
     width: 200px;
