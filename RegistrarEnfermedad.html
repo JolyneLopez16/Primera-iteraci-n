@@ -56,7 +56,7 @@
                         <h2>Nombre</h2>
                     </div>
                     <div>
-                        <input type="text" class="entrada-nombre">
+                        <input id="inp-nombre" type="text" class="requerido">
                     </div>
                 </div>
                 <div class="estado">
@@ -64,7 +64,7 @@
                         <h2>Estado</h2>
                     </div>
                     <div>
-                        <input type="text" class="entrada-estado">
+                        <input id="inp-estado" type="text" class="requerido">
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                         <h2>Descripción</h2>
                     </div>
                     <div>
-                        <input type="text" class="entrada-descripcion">
+                        <input id="inp-descripcion" type="text" class="requerido">
                     </div>
                 </div>
                 <div class="tratamiento">
@@ -82,15 +82,20 @@
                         <h2>Tratamiento</h2>
                     </div>
                     <div>
-                        <input type="text" class="entrada-tratamiento">
+                        <input id="inp-tratamiento" type="text" class="requerido">
                     </div>
                 </div>
             </div>
         </div>
         <div>
-            <button class="btn-guardar"><span>Guardar</span></button>
+            <button id="btn-guardar-enfermedad" class="btn-guardar"><span>Guardar</span></button>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/servicios-generales.js"></script>
+    <script src="js/registroEnfermedad.js"></script>
 </body>
 
 </html>

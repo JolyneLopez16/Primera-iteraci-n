@@ -56,54 +56,6 @@ h3 {
     flex-direction: row;
 }
 
-.entrada-nombre {
-    width: 250px;
-    height: 70px;
-    background-color: #2c794f;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 20pt;
-    text-align: center;
-    margin: 30px;
-}
-
-.entrada-estado {
-    width: 250px;
-    height: 70px;
-    background-color: #2c794f;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 20pt;
-    text-align: center;
-    margin: 30px;
-}
-
-.entrada-descripcion {
-    width: 250px;
-    height: 70px;
-    background-color: #2c794f;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 20pt;
-    text-align: center;
-    margin: 30px;
-}
-
-.entrada-tratamiento {
-    width: 250px;
-    height: 70px;
-    background-color: #2c794f;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 20pt;
-    text-align: center;
-    margin: 30px;
-}
-
 .btn-guardar {
     margin: 35px;
     width: 200px;
