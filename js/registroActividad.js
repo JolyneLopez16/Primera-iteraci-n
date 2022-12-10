@@ -20,7 +20,7 @@ const validar = () => {
 
     if (error) {
         Swal.fire({
-            'title': 'Registro incorrecto',
+            'title': '¡No se ha registrado el cambio!',
             'text': 'Por favor complete los campos resaltados',
             'icon': 'warning'
         })
@@ -32,7 +32,6 @@ const validar = () => {
             })
             /*registrarActividadNueva()*/
     }
-
 }
 
 btnGuardarAF.addEventListener('click', validar)

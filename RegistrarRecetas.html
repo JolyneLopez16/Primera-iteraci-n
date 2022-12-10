@@ -47,24 +47,24 @@
     <section id="sct-registrar-recetas">
         <div class="titulos-registrar-recetas">
             <h1>Registrar recetas</h1>
-            <h2>Añade una recetas</h2>
+            <h2>Añade una nueva receta</h2>
         </div>
         <div class="fondo-completo">
             <div class="division-superior">
                 <div class="nombre-ingredientes">
                     <div class="nombre">
                         <h2>Nombre</h2>
-                        <input type="text" class="entrada-nombre">
+                        <input id="inp-nombre" type="text" class="requerido">
                     </div>
                     <div class="ingredientes">
                         <h2>Ingredientes</h2>
-                        <input type="text" class="entrada-ingredientes">
+                        <input id="inp-ingredientes" type="text" class="requerido">
                     </div>
                 </div>
                 <div class="tipo">
                     <h2>Tipo</h2>
                     <label for="slt-tipo">tipo</label>
-                    <select id="slt-tipo" class="entrada-tipo" class="requerido">
+                    <select id="slt-tipo" class="requerido">
                         <option value="">-- Seleccione un tipo --</option>
                         <option value="Desayuno">Desayuno</option>
                         <option value="Almuerzo">Almuerzo</option>
@@ -75,7 +75,7 @@
                 <div class="categoria">
                     <h2>Categoría</h2>
                     <label for="slt-categoria">Categoría</label>
-                    <select id="slt-categoria" class="entrada-categoria" class="requerido">
+                    <select id="slt-categoria" class="requerido">
                         <option value="">-- Seleccione una categoría --</option>
                         <option value="Vegetariana">Vegetariana</option>
                         <option value="Vegana">Vegana</option>
@@ -87,18 +87,23 @@
             <div class="division-inferior">
                 <div class="pasos">
                     <h2>Pasos a seguir</h2>
-                    <input type="text" class="entrada-pasos">
+                    <input id="inp-pasos" class="requerido" type="text">
                 </div>
                 <div class="foto">
                     <h2>Foto del platillo</h2>
-                    <input type="image" class="entrada-foto">
+                    <input id="inp-foto" class="requerido" type="image">
                 </div>
                 <div>
-                    <button class="btn-guardar"><span>Guardar</span></button>
+                    <button id="btn-guardar-receta" class="btn-guardar"><span>Guardar</span></button>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/servicios-generales.js"></script>
+    <script src="js/registroReceta.js"></script>
 </body>
 
 </html>
