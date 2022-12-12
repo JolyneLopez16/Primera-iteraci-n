@@ -5,8 +5,8 @@ let listaPesos = [];
 const mostrarTabla = () => {
     cuerpoTabla.innerHTML = '';
     listaPesos.forEach(peso => {
-        let peso = new Date(peso.fecha);
-        peso.setDate(peso.getDate() + 1);
+        let fecha = new Date(peso.fecha);
+        fecha.setDate(fecha.getDate() + 1);
         let fila = cuerpoTabla.insertRow();
         fila.insertCell().innerText = peso.peso;
         fila.insertCell().innerText = fecha.toLocaleDateString('es');
