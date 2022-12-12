@@ -44,9 +44,6 @@
     </header>
 
     <h1>Historial Peso</h1>
-    <h2>
-        Tabla de registro
-    </h2>
 
     <section id="sct-peso">
         <table>
@@ -64,8 +61,14 @@
 
     </section>
 
-    <img class="img-peso" src="img/graficaPeso.PNG" alt="">
+    <div class="grafico">
+        <canvas id="grafico-peso">
+
+        </canvas>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/servicio-general.js"></script>

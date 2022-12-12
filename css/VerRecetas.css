@@ -11,14 +11,8 @@ h1 {
     font-size: 32pt;
     font-weight: bold;
     margin-left: 15px;
-    margin-top: 15px;
-}
-
-h2 {
-    font-size: 26pt;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 h3 {
@@ -191,4 +185,9 @@ label {
     padding: 1%;
     border-radius: 6px;
     margin-right: 2%;
+}
+
+#btn-buscar {
+    height: 40px;
+    width: 15%;
 }

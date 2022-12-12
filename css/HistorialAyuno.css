@@ -11,14 +11,8 @@ h1 {
     font-size: 32pt;
     font-weight: bold;
     margin-left: 15px;
-    margin-top: 15px;
-}
-
-h2 {
-    font-size: 26pt;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 h3 {
@@ -169,4 +163,17 @@ tr {
 #sct-ayuno {
     justify-content: center;
     display: flex;
+}
+
+.grafico {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grafico-ayuno {
+    height: 90% !important;
+    width: 80%;
 }

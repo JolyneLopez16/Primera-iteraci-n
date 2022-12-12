@@ -24,3 +24,35 @@ const cargarLista = async() => {
 
 
 cargarLista();
+
+const crearGrafico = (arrAyunos, arrFechas) => {
+    let contexto = document.getElementById('grafico-ayuno').getContext('2d');
+    let grafico = new Chart(contexto, {
+        type: 'bar',
+        data: {
+            labels: arrFechas,
+            datasets: [{
+                label: 'Ayunos realizados',
+                data: arrAyunos,
+                backgroundColor: [
+                    '#005241'
+                ]
+            }]
+        }
+    });
+};
+
+const obtenerAyuno = async() => {
+    let listaAyunos = await obtenerDatos('listar-ayunos');
+    let arrFechas = [];
+    let arrAyunos = [];
+
+
+    listaAyunos.forEach(ayuno => {
+        arrFechas.push(moment(ayuno.fecha).add(1, 'days').format('MM-DD-YYYY'));
+        arrAyunos.push(ayuno.plan);
+    });
+    crearGrafico(arrAyunos, arrFechas);
+};
+
+obtenerAyuno();
