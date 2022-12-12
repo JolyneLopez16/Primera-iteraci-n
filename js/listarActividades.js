@@ -9,7 +9,7 @@ const mostrarTabla = () => {
         let fila = cuerpoTabla.insertRow();
         fila.insertCell().innerText = actividad.tipo;
         fila.insertCell().innerText = fecha.toLocaleDateString('es');
-        fila.insertCell().innerText = actividad.fechas;
+        fila.insertCell().innerText = actividad.inicio;
 
     });
 };
@@ -21,7 +21,7 @@ const cargarLista = async() => {
 
 cargarLista();
 
-const crearGrafico = (arrActividades, arrFechas) => {
+/*const crearGrafico = (arrActividades, arrFechas) => {
     let contexto = document.getElementById('grafico-actividad').getContext('2d');
     let grafico = new Chart(contexto, {
         type: 'polarArea',
@@ -51,4 +51,4 @@ const obtenerActividades = async() => {
     crearGrafico(arrActividades, arrFechas);
 };
 
-obtenerActividades();
+obtenerActividades();*/
