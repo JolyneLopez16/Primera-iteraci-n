@@ -31,8 +31,8 @@ let ingredientesStr = listarIngredientes();
 
 
 const nuevoIngrediente = (item) => {
-    var ingrediente = document.createElement("li");
-    var ingredienteNombre = document.createTextNode(item);
+    let ingrediente = document.createElement("li");
+    let ingredienteNombre = document.createTextNode(item);
     ingrediente.appendChild(ingredienteNombre);
     listaIngredientes.appendChild(ingrediente);
 }
@@ -54,13 +54,23 @@ const agregarIngrediente = () => {
 const validar = async() => {
     let error = false;
     let camposRequeridos = document.querySelectorAll('.requerido');
+    ingredientesStr = listarIngredientes();
 
+    console.log(listaIngredientes);
+
+    if (ingredientes.length == 0) {
+        inIngredientes.classList.add('input-error');
+        error = true;
+    } else {
+        inIngredientes.classList.remove('input-error');
+    }
+    console.log(ingredientes);
     camposRequeridos.forEach(campo => {
         if (campo.value == '') {
             campo.classList.add('input-error');
             error = true;
         } else {
-            campo.classList.remove('input-error')
+            campo.classList.remove('input-error');
         }
     });
 
@@ -75,14 +85,23 @@ const validar = async() => {
             'nombre': inNombre.value,
             'tipo': inTipo.value,
             'categoria': inCategoria.value,
-            'ingredientes':  ingredientesStr,
+            'ingredientes': ingredientesStr,
             'pasos': inPasos.value
         };
+        console.log(receta);
         registrarDatos('registrar-recetas', receta, "#");
 
     }
 }
 
+const activarEnter = (e) => {
+    if (e.key === 'Enter') {
+        agregarIngrediente();
+        resetListaIng();
+    }
+}
+
 btnGuardarReceta.addEventListener('click', validar)
 btnAgregarIngrediente.addEventListener("click", agregarIngrediente);
+inIngredientes.addEventListener("keypress", activarEnter);
 btnAgregarIngrediente.addEventListener("click", resetListaIng);

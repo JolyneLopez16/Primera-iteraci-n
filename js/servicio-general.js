@@ -7,18 +7,20 @@ const registrarDatos = async(endpoint, data, redireccion) => {
         'responseType': 'json',
         'data': data
     }).then(response => {
-        Swal.fire({
-            'icon': 'success',
-            'title': 'Se agrego con éxito',
-            'text': response.data.msj
+        if (data != 'pesoActual') {
+            Swal.fire({
+                'icon': 'success',
+                'title': 'Se agrego con éxito',
+                'text': response.data.msj
 
-        }).then(() => {
-            if (redireccion != "#") {
-                window.location.href = redireccion;
-            } else {
-                location.reload();
-            }
-        });
+            }).then(() => {
+                if (redireccion != "#") {
+                    window.location.href = redireccion;
+                } else {
+                    location.reload();
+                }
+            });
+        }
     }).catch(error => {
         Swal.fire({
             'icon': 'error',
