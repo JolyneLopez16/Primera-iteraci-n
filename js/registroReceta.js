@@ -5,6 +5,51 @@ const inCategoria = document.getElementById('slt-categoria');
 const inPasos = document.getElementById('inp-pasos');
 const inFoto = document.getElementById('inp-foto');
 const btnGuardarReceta = document.getElementById('btn-guardar-receta');
+const btnAgregarIngrediente = document.getElementById('btn-agregar-ingrediente');
+const listaIngredientes = document.querySelector('#lista-ingredientes ul')
+const btnBorrarIngrediente = document.getElementById('btn-borrar-ingrediente')
+let ingredientes = [];
+let n = -1;
+
+
+const listarIngredientes = (arreglo) => {
+    let str = "";
+    for (let index = 0; index < ingredientes.length; index++) {
+        let ing = ingredientes[index];
+        if (str == "") {
+            str = ing;
+        } else {
+            str = str + ", " + ing;
+        }
+
+    }
+    console.log(str);
+    return str;
+}
+let ingredientesStr = listarIngredientes();
+
+
+
+const nuevoIngrediente = (item) => {
+    var ingrediente = document.createElement("li");
+    var ingredienteNombre = document.createTextNode(item);
+    ingrediente.appendChild(ingredienteNombre);
+    listaIngredientes.appendChild(ingrediente);
+}
+
+const resetListaIng = () => {
+    inIngredientes.value = "";
+}
+
+const agregarIngrediente = () => {
+    n = n + 1;
+    let item = inIngredientes.value;
+    ingredientes.push(item);
+    listarIngredientes()
+    nuevoIngrediente(ingredientes[n]);
+    console.log(ingredientesStr);
+}
+
 
 const validar = async() => {
     let error = false;
@@ -37,3 +82,5 @@ const validar = async() => {
 }
 
 btnGuardarReceta.addEventListener('click', validar)
+btnAgregarIngrediente.addEventListener("click", agregarIngrediente);
+btnAgregarIngrediente.addEventListener("click", resetListaIng);

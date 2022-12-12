@@ -8,10 +8,13 @@
     <title>Registrar tipo de actividad física</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel='stylesheet' type='text/css' media='screen' href='fontawesome-free/css/all.min.css'>
+    <link href="https://fonts.cdnfonts.com/css/verdana" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/opciones.css">
     <link rel="stylesheet" href="css/RegistrarTipoActividadFisica.css">
+    <link rel="stylesheet" href="/css/formularios.css">
 </head>
 
 <body>
@@ -44,29 +47,27 @@
             </div>
         </div>
     </header>
-    <section id="sct-registrar-tipo-actividad-fisica">
-        <div class="titulos">
-            <h1>Registrar tipo de actividad física</h1>
-            <h2>Añade un nuevo tipo de actividad física</h2>
-        </div>
-        <div class="fondo-completo">
-            <div class="division-izquierda">
-                <div class="nombre">
-                    <h2>Nombre</h2>
-                    <input id="inp-nombre" type="text" class="requerido">
-                </div>
-                <div>
-                    <button id="btn-guardar-tipo" class="btn-guardar"><span>Guardar</span></button>
-                </div>
+
+    <section class="sct-registrar">
+        <div class="form">
+            <div class="form-head">
+                <h1>Registro de Tipos de Actividades Físicas</h1>
             </div>
-            <div class="division-derecha">
-                <div class="icono">
-                    <h2>Icono</h2>
-                    <input id="inp-icono" type="image" class="requerido">
+            <div class="form-content">
+                <h3>Ingrese la información que se le solicita</h3>
+                <p>No olvide llenar todos los espacios.</p>
+                <div class="form-input">
+                    <label for="nombre">Nombre:</label>
+                    <input class="requerido" type="text" min="0" name="fecha" id="inp-nombre">
                 </div>
+                <div class="form-input">
+                    <div class="foto"><label>Icono:</label><input class="icono" type="file" name="icono" id="icono-actividad" accept="png, jpg, webp, svg"></div>
+                </div>
+                <button class="btn-form" id="inp-icono">Guardar</button>
             </div>
         </div>
     </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

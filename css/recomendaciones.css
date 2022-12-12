@@ -48,12 +48,13 @@ h1 {
 }
 
 .tip-box:nth-child(odd) {
-    background-color: #003735;
+    background: linear-gradient(90deg, rgba(0, 82, 65, 1) 8%, rgba(44, 121, 79, 1) 50%, rgba(0, 82, 65, 1) 92%);
     color: #fff;
 }
 
 .tip-box:nth-child(even) {
-    background-color: #6dab5d;
+    background: rgb(173, 230, 77);
+    background: linear-gradient(90deg, rgba(173, 230, 77, 1) 0%, rgba(109, 171, 93, 1) 51%, rgba(173, 230, 77, 1) 100%);
     color: #000;
 }
 

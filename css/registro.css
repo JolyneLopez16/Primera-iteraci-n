@@ -14,6 +14,10 @@ h1 {
     height: 10% !important;
 }
 
+.form-input input {
+    height: 35px !important;
+}
+
 .form-content {
     margin-top: 5px;
     display: grid;
