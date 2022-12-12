@@ -25,7 +25,7 @@ select {
     background-color: #0b542f32;
 }
 
-#inp-condicion,
+#inp-descripcion,
 #inp-tratamiento {
     margin-top: 10px;
     border: none;

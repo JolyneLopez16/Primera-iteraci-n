@@ -26,10 +26,11 @@ const validar = async() => {
     } else {
         let enfermedad = {
             'nombre': inNombre.value,
-            'estado': inEstado,
-            'descripcion': inDescripcion,
-            'tratamiento': inTratamiento
+            'estado': inEstado.value,
+            'descripcion': inDescripcion.value,
+            'tratamiento': inTratamiento.value
         };
+        console.log(enfermedad);
         registrarDatos('registrar-enfermedad', enfermedad, "#");
 
     }
