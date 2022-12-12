@@ -42,8 +42,8 @@ const validar = async() => {
             'correo': await obtenerUltimoCorreo(),
             'pesoActual': inPeso.value
         }
-        registrarDatos('/modificar-peso', pesoActual, "#");
-        registrarDatos('/registrar-pesos', peso, "#");
+        registrarDatos('modificar-peso', pesoActual, "#");
+        registrarDatos('registrar-pesos', peso, "#");
 
 
     }

@@ -24,13 +24,14 @@ const validar = async() => {
             'text': 'Por favor llene todos los espacios.'
         });
     } else {
-        Swal.fire({
-                'icon': 'success',
-                'title': '¡Has ingresado una enfermedad correctamente!',
-                'text': 'Podés revisarlo en tu perfil.'
+        let enfermedad = {
+            'nombre': inNombre.value,
+            'estado': inEstado,
+            'descripcion': inDescripcion,
+            'tratamiento': inTratamiento
+        };
+        registrarDatos('registrar-enfermedad', enfermedad, "#");
 
-            })
-            /*registrarEnfermedadNueva()*/
     }
 }
 

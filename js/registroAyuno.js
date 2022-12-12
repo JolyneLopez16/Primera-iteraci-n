@@ -35,6 +35,7 @@ const calcularHorasAyuno = (fechaI, horaI, fechaF, horaF) => {
 
     tiempoAyunado = fechaFin - fechaInicio;
     horasAyunadas = tiempoAyunado / 3600000;
+    tiempoEnHoras = tiempoAyunado / 3600000;
     horasAyunadas = Math.floor(horasAyunadas).toFixed(0);
     minutosAyunados = tiempoAyunado / 60000;
     minutosAyunados = ((minutosAyunados / 60) - (minutosAyunados / 60).toFixed(0)) * 60;
@@ -46,7 +47,7 @@ const calcularHorasAyuno = (fechaI, horaI, fechaF, horaF) => {
 
     console.log("Usted ha ayunado " + horasAyunadas + " horas y " + minutosAyunados.toFixed(0) + " minutos");
 
-    let arr = [horasAyunadas, minutosAyunados];
+    let arr = [horasAyunadas, minutosAyunados, tiempoEnHoras];
 
     return arr;
 }
@@ -109,20 +110,7 @@ const validar = () => {
         }
     });
 
-    if (error) {
-        Swal.fire({
-            'title': '¡No se ha registrado el cambio!',
-            'text': 'Por favor complete los campos resaltados',
-            'icon': 'warning'
-        })
-    } else {
-        Swal.fire({
-            'title': 'Registro exitoso',
-            'text': 'Se ha registrado correctamente',
-            'icon': 'success'
-        })
-
-        let estado;
+    let estado;
         if (tipo == "14:10") {
             n = 14;
         } else if (tipo == "16:8") {
@@ -133,12 +121,34 @@ const validar = () => {
             n = 20;
         }
 
-
-        if (tiempo[0] < n) {
+        
+    if (tiempo[0] < n) {
             estado = "incompleto";
-        } else {
+    } else {
             estado = "completado";
-        }
+    }
+    
+    if (error) {
+        Swal.fire({
+            'icon': 'warning',
+            'title': '¡No se ha registrado el cambio!',
+            'text': 'Por favor llene todos los espacios.'
+        });
+    } else {
+        let ayuno = {
+            'fecha': fechaI,
+            'plan': tipo,
+            'inicio': horaI,
+            'final': horaF,
+            'horasDeAyuno': tiempo[2]
+        };
+        registrarDatos('registrar-ayuno', ayuno, "#");
+
+    }
+
+        
+
+
 
         console.log(estado);
         formOutput.style.cssText = 'display: block';
@@ -151,9 +161,7 @@ const validar = () => {
             formResponse.classList.remove('incompleto');
         }
 
-        /*registrarAyunoNuevo()*/
     };
-}
 
 const inicializarFunc = () => {
     if (txtInicioFecha.value != "" &&

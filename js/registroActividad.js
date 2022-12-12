@@ -6,6 +6,7 @@ const horaFinalAF = document.getElementById('hora-final');
 const btnGuardarAF = document.getElementById('btn-guardar');
 
 const validar = () => {
+
     let error = false;
     let camposRequeridos = document.querySelectorAll('.requerido');
 
@@ -16,21 +17,25 @@ const validar = () => {
         } else {
             campo.classList.remove('input-error')
         }
-    })
+    });
 
     if (error) {
         Swal.fire({
+            'icon': 'warning',
             'title': '¡No se ha registrado el cambio!',
-            'text': 'Por favor complete los campos resaltados',
-            'icon': 'warning'
-        })
+            'text': 'Por favor llene todos los espacios.'
+        });
     } else {
-        Swal.fire({
-                'title': 'Registro exitoso',
-                'text': 'Se ha registrado correctamente',
-                'icon': 'success'
-            })
-            /*registrarActividadNueva()*/
+        let horas = horaFinalAF.value - horaIncioAF.value;
+        let actividad = {
+            'fecha': fecha.value,
+            'tipo': tipoActividad.value,
+            'inicio': horaIncioAF.value,
+            'final': horaFinalAF.value,
+            'horas': horas
+        };
+        registrarDatos('registrar-fisicas', actividad, "#");
+
     }
 }
 

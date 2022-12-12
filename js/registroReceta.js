@@ -71,13 +71,15 @@ const validar = async() => {
             'text': 'Por favor llene todos los espacios.'
         });
     } else {
-        Swal.fire({
-                'icon': 'success',
-                'title': '¡Has ingresado una nueva receta correctamente!',
-                'text': 'Podés revisarlo en tu perfil.'
+        let receta = {
+            'nombre': inNombre.value,
+            'tipo': inTipo.value,
+            'categoria': inCategoria.value,
+            'ingredientes':  ingredientesStr,
+            'pasos': inPasos.value
+        };
+        registrarDatos('registrar-recetas', receta, "#");
 
-            })
-            /*registrarRecetaNueva()*/
     }
 }
 

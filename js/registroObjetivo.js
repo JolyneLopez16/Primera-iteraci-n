@@ -22,13 +22,12 @@ const validar = async() => {
             'text': 'Por favor llene todos los espacios.'
         });
     } else {
-        Swal.fire({
-                'icon': 'success',
-                'title': '¡Has ingresado un nuevo objetivo correctamente!',
-                'text': 'Podés revisarlo en tu perfil.'
+        let objetivo = {
+            'condicion': inCondicion.value,
+            'tipo': inTipo.value
+        };
+        registrarDatos('registrar-objetivos', objetivo, "#");
 
-            })
-            /*registrarObjetivoNuevo()*/
     }
 }
 

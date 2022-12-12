@@ -22,13 +22,11 @@ const validar = async() => {
             'text': 'Por favor llene todos los espacios.'
         });
     } else {
-        Swal.fire({
-                'icon': 'success',
-                'title': '¡Has ingresado una enfermedad correctamente!',
-                'text': 'Podés revisarlo en tu perfil.'
+        let tipoActividad = {
+            'nombre': inNombre.value,
+        };
+        registrarDatos('registrar-tipoActividad', tipoActividad, "#");
 
-            })
-            /*registrarTipoActividadNuevo()*/
     }
 }
 
