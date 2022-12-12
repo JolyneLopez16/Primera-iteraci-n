@@ -19,12 +19,9 @@ const cargarLista = async() => {
 
 cargarLista();
 
-/*let tipoObjetivo = tipo.filter(tipo =>{
-    console.log();
-});
+const drpDropdown = document.querySelector('.dropdown-content2')
 
-let tipo = [
-    {
+const tipo = [{
         tipo: "Reducción de peso"
     },
     {
@@ -41,7 +38,19 @@ let tipo = [
     },
     {
         tipo: "Cantidad de días de ayuno finalizados"
-    }
-]
+    },
+];
 
-let approived = tipoObjetivo.filter(tipo => student.score >= 11);*/
+const copia = [...tipo];
+
+function forEachReduccionImc(pImc = [], pFuncion) {
+    for (let i = 0; i < pImc.length; i++) {
+        const elemento = pImc[i];
+        pFuncion(elemento);
+    }
+
+}
+
+tipo.forEach((elemento) => {
+    console.log(elemento.tipo);
+});
