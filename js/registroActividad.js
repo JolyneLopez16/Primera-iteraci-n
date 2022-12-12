@@ -54,7 +54,6 @@ const validar = () => {
         };
         console.log(actividad);
         registrarDatos('registrar-fisicas', actividad, "#");
-
     }
 }
 

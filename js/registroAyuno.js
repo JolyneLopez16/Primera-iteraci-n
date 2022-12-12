@@ -79,15 +79,20 @@ const validarEstado = () => {
         estado = "completado";
     }
 
-    formOutput.style.cssText = 'display: block';
-    formResponse.classList.add(estado);
-    if (estado == "incompleto") {
-        formResponse.innerHTML = "Incompleto";
-        formResponse.classList.remove('completado');
+    if (n == 0) {
+        formOutput.style.cssText = 'display: none';
     } else {
-        formResponse.innerHTML = "Completado";
-        formResponse.classList.remove('incompleto');
+        formOutput.style.cssText = 'display: block';
+        formResponse.classList.add(estado);
+        if (estado == "incompleto") {
+            formResponse.innerHTML = "Incompleto";
+            formResponse.classList.remove('completado');
+        } else {
+            formResponse.innerHTML = "Completado";
+            formResponse.classList.remove('incompleto');
+        }
     }
+
 }
 
 const validar = () => {
@@ -111,23 +116,23 @@ const validar = () => {
     });
 
     let estado;
-        if (tipo == "14:10") {
-            n = 14;
-        } else if (tipo == "16:8") {
-            n = 16;
-        } else if (tipo == "18:6") {
-            n = 18;
-        } else if (tipo == "20:4") {
-            n = 20;
-        }
-
-        
-    if (tiempo[0] < n) {
-            estado = "incompleto";
-    } else {
-            estado = "completado";
+    if (tipo == "14:10") {
+        n = 14;
+    } else if (tipo == "16:8") {
+        n = 16;
+    } else if (tipo == "18:6") {
+        n = 18;
+    } else if (tipo == "20:4") {
+        n = 20;
     }
-    
+
+
+    if (tiempo[0] < n) {
+        estado = "incompleto";
+    } else {
+        estado = "completado";
+    }
+
     if (error) {
         Swal.fire({
             'icon': 'warning',
@@ -139,29 +144,30 @@ const validar = () => {
             'fecha': fechaI,
             'plan': tipo,
             'inicio': horaI,
-            'final': horaF,
+            'fin': horaF,
             'horasDeAyuno': tiempo[2]
         };
         registrarDatos('registrar-ayuno', ayuno, "#");
+        console.log(ayuno);
 
     }
 
-        
 
 
 
-        console.log(estado);
-        formOutput.style.cssText = 'display: block';
-        formResponse.classList.add(estado);
-        if (estado == "incompleto") {
-            formResponse.innerHTML = "Incompleto";
-            formResponse.classList.remove('completado');
-        } else {
-            formResponse.innerHTML = "Completado";
-            formResponse.classList.remove('incompleto');
-        }
 
-    };
+    console.log(estado);
+    formOutput.style.cssText = 'display: block';
+    formResponse.classList.add(estado);
+    if (estado == "incompleto") {
+        formResponse.innerHTML = "Incompleto";
+        formResponse.classList.remove('completado');
+    } else {
+        formResponse.innerHTML = "Completado";
+        formResponse.classList.remove('incompleto');
+    }
+
+};
 
 const inicializarFunc = () => {
     if (txtInicioFecha.value != "" &&
