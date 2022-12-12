@@ -173,4 +173,4 @@ txtInicioFecha.addEventListener('change', inicializarFunc);
 txtInicioHora.addEventListener('change', inicializarFunc);
 txtFinFecha.addEventListener('change', inicializarFunc);
 txtFinHora.addEventListener('change', inicializarFunc);
-txtTipoAyuno.addEventListener('change', inicializarFunc);
+txtTipoAyuno.addEventListener('change', inicializarFunc); /*  */

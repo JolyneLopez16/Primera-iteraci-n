@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/opciones.css">
     <link rel="stylesheet" href="/css/RegistrarObjetivos.css">
+    <link rel="stylesheet" href="/css/formularios.css">
 </head>
 
 <body>
@@ -44,42 +45,41 @@
             </div>
         </div>
     </header>
-    <section id="sct-registrar-objetivo">
-        <div class="titulos">
-            <h1>Registrar objetivo</h1>
-            <h2>Añade un nuevo objetivo</h2>
-        </div>
-        <div class="fondo-completo">
-            <div class="division-izquierda">
-                <div class="condicion">
-                    <h2>Condición</h2>
-                    <input id="inp-condicion" type="text" class="requerido">
-                </div>
-                <div>
-                    <button id="btn-guardar-objetivo" class="btn-guardar"><span>Guardar</span></button>
-                </div>
+
+    <section class="sct-registrar">
+        <div class="form">
+            <div class="form-head">
+                <h1>Registro de Objetivos</h1>
             </div>
-            <div class="division-derecha">
-                <div>
-                    <h2>Tipo de objetivo</h2>
-                    <select id="slt-tipo" class="requerido">
-                        <option value="">-- Seleccione un tipo de objetivo --</option>
+            <div class="form-content">
+                <h3>Ingrese la información que se le solicita</h3>
+                <p>No olvide llenar todos los espacios.</p>
+                <div class="form-input">
+                    <label for="Descripción">Descripción:</label>
+                    <input type="text" min="0" class="required" name="nombre" id="inp-condicion">
+                </div>
+                <div class="form-input">
+                    <label for="plan">Tipo de Objetivo:</label>
+                    <select class="requerido" type="text" min="0" name="plan" id="slt-tipo">
+                        <option value="" selected disabled>-- Seleccione un tipo de objetivo --</option>
                         <option value="reduccion-peso">Reducción de peso</option>
                         <option value="aumento-peso">Aumento de peso</option>
                         <option value="reduccion-imc">Reducción del IMC</option>
                         <option value="aumento-imc">Aumento del IMC</option>
                         <option value="horas-ayuno">Acumulación de horas de ayuno</option>
                         <option value="dias-ayuno">Cantidad de días de ayuno finalizados</option>
+
                     </select>
                 </div>
+                <button class="btn-form" id="btn-guardar-objetivo">Guardar</button>
             </div>
-        </div>
         </div>
     </section>
 
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/servicios-generales.js"></script>
+    <script src="/js/servicio-general.js"></script>
     <script src="js/registroObjetivo.js"></script>
 </body>
 

@@ -31,14 +31,6 @@ const validar = () => {
             'text': 'Por favor llene todos los espacios.'
         });
     } else {
-        Swal.fire({
-            'icon': 'success',
-            'title': '¡Te has registrado!',
-            'text': 'Pronto podrás visualizar tu perfil.'
-
-        }).then((result) => {
-            window.location.href = '/perfil.html';
-        });
         let usuario = {
             'nombre': txtNombre.value,
             'apellido': txtApellido.value,
@@ -50,7 +42,7 @@ const validar = () => {
             'pesoMeta': txtPesoo.value,
             'foto': inpFoto
         };
-        registrarDatos(usuario, '/registrar-usuario');
+        registrarDatos('/registrar-usuario', usuario, '/perfil.html');
 
 
     }

@@ -9,11 +9,15 @@ const registrarDatos = async(endpoint, data, redireccion) => {
     }).then(response => {
         Swal.fire({
             'icon': 'success',
-            'title': 'Su platillo fue agregado con éxito',
+            'title': 'Se agrego con éxito',
             'text': response.data.msj
 
         }).then(() => {
-            window.location.href = redireccion;
+            if (redireccion != "#") {
+                window.location.href = redireccion;
+            } else {
+                location.reload();
+            }
         });
     }).catch(error => {
         Swal.fire({
@@ -67,4 +71,19 @@ const eliminarDatos = async(endpoint, _id) => {
             text: error
         });
     });
+};
+
+/* GET */
+const obtenerListaDatos = async(pEndPoint) => {
+    let url = `http://localhost:3000/api${pEndPoint}`;
+    let listaDatos = [];
+
+    await axios({
+        method: 'get',
+        url: url
+    }).then(response => {
+        listaDatos = response.data.lista;
+    });
+
+    return listaDatos;
 };

@@ -34,14 +34,6 @@ const validar = async() => {
             'text': 'Por favor llene todos los espacios.'
         });
     } else {
-        Swal.fire({
-            'icon': 'success',
-            'title': '¡Has ingresado tu nuevo peso correctamente!',
-            'text': 'Podés revisarlo en tu perfil.'
-
-        }).then(() => {
-            location.reload();
-        });
         let peso = {
             'peso': inPeso.value,
             'fecha': inFechaPeso.value
@@ -50,8 +42,8 @@ const validar = async() => {
             'correo': await obtenerUltimoCorreo(),
             'pesoActual': inPeso.value
         }
-        registrarDatos(pesoActual, '/modificar-peso');
-        registrarDatos(peso, '/registrar-pesos');
+        registrarDatos('/modificar-peso', pesoActual, "#");
+        registrarDatos('/registrar-pesos', peso, "#");
 
 
     }

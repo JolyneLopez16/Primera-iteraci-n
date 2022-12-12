@@ -71,13 +71,14 @@
 
                 </div>
                 <div class="form-input">
-                    <label for="fechaN">Fecha de nacimiento:</label>
-                    <input type="date" class="required" name="fechaN" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
-                </div>
-                <div class="form-input">
                     <label for="apellido">Apellido:</label>
                     <input type="text" class="required" min="0" name="apellido" id="txt-apellido">
                 </div>
+                <div class="form-input">
+                    <label for="fechaN">Fecha de nacimiento:</label>
+                    <input type="date" class="required" name="fechaN" placeholder="Fecha de nacimiento" max="2022-11-15" id="txt-fecha">
+                </div>
+
                 <div class="form-input">
                     <label for="estatura">Estatura:</label>
                     <input type="number" class="required" name="estatura" id="txt-estatura">
@@ -92,15 +93,15 @@
                     <input type="number" class="required" name="peso-actual" id="txt-pesoa">
                 </div>
                 <div class="form-input">
-                    <label for="peso-meta">Peso Actual (Kg):</label>
+                    <label for="peso-meta">Peso a Alcanzar (Kg):</label>
                     <input type="number" class="required" name="peso-meta" id="txt-pesoo">
                 </div>
-                <div class="perfil"><label>Foto de perfil:</label><input class="inp-foto" type="file" name="foto-perfil" id="foto-perfil"></div>
 
+            </div>
+            <div class="form-footer">
+                <div class="foto-perfil"><label>Foto de perfil:</label><input class="inp-foto" type="file" name="foto-perfil" id="foto-perfil"></div>
                 <button class="btn-form" id="btn-registrar">Registrar</button>
             </div>
-
-
         </div>
 
     </section>
@@ -108,7 +109,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/servicios-generales.js"></script>
+    <script src="/js/servicio-general.js"></script>
     <script src="/js/registro.js"></script>
     <script src="/js/functions.js"></script>
 </body>

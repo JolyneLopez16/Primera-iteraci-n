@@ -7,8 +7,9 @@
     />
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/registro.css">
     <link rel="stylesheet" href="/css/perfil.css">
+    <link rel="stylesheet" href="/css/formularios.css">
+    <!-- <link rel="stylesheet" href="/css/registro.css"> -->
 </head>
 
 <body>
@@ -41,78 +42,103 @@
             </div>
         </div>
     </header>
-    <section class="sct-registro">
-        <h1>Perfil</h1>
-        <section class="sct-datos sct-datos-p">
-            <div class="datos-box">
 
-                <div class="resultado-box">
-                    <span class="dato-id">Nombre</span>
-                    <span id="us-nombre"></span>
+    <section class="sct-registrar">
+        <div class="perfil">
+            <div class="col">
+                <div class="img-perfil">
+                    <img src="/img/159626024_3873571156034720_8737978309652836185_n.jpg" alt="Foto de Perfil">
                 </div>
-                <div class="resultado-box">
-                    <span class="dato-id">Apellido</span>
-                    <span id="us-apellido"></span>
+                <div class="caja-datos-perfil">
+                    <span class="dato-id">imc</span>
+                    <div class="dato-perfil">
+                        <span id="us-imc"></span>
+                    </div>
                 </div>
-
-
-                <div class="resultado-box">
-                    <span class="dato-id">Fecha de Nacimiento</span>
-                    <span id="us-nacimiento"></span>
+                <div class="caja-datos-perfil">
+                    <span class="dato-id">Clasificación</span>
+                    <div class="dato-perfil">
+                        <span id="us-imc-cat"></span>
+                    </div>
                 </div>
-                <div class="resultado-box">
-                    <span class="dato-id">Edad</span>
-                    <span id="us-edad"></span>
-                </div>
+                <div style="height: 20%;"></div>
 
 
-                <div class="resultado-box">
-                    <span class="dato-id">Estatura (M)</span>
-                    <span id="us-estatura"></span>
+            </div>
+            <div class="col">
+                <h2>Mi Perfil</h2>
+                <div class="perfil-fila">
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">Nombre</span>
+                        <div class="dato-perfil-col-2">
+                            <span id="us-nombre"></span>
+                        </div>
+                    </div>
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">Apellido</span>
+                        <div class="dato-perfil-col-2">
+                            <span id="us-apellido"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="resultado-box">
-                    <span class="dato-id">Sexo</span>
-                    <span id="us-sexo"></span>
+                <div class="perfil-fila">
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">correo</span>
+                        <div class="dato-perfil-col-2 dato-correo">
+                            <span id="us-correo"></span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="resultado-box">
-                    <span class="dato-id">Correo Electrónico</span>
-                    <span id="us-correo"></span>
+                <div class="perfil-fila">
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">nacimiento</span>
+                        <div class="dato-perfil-col-2 fecha-nacimiento">
+                            <span id="us-nacimiento"></span>
+                        </div>
+                    </div>
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">edad</span>
+                        <div class="dato-perfil-col-2">
+                            <span id="us-edad"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="resultado-box">
-                    <span class="dato-id">Peso Actual</span>
-                    <span id="us-peso-a"></span>
+                <div class="perfil-fila">
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">estatura</span>
+                        <div class="dato-perfil-col-2">
+                            <span id="us-estatura"></span><span class="estatura-unidad">m</span>
+                        </div>
+                    </div>
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">sexo</span>
+                        <div class="dato-perfil-col-2">
+                            <span id="us-sexo"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="resultado-box">
-                    <span class="dato-id">Peso a Alcanzar</span>
-                    <span id="us-peso-m"></span>
+                <div class="perfil-fila">
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">peso</span>
+                        <div class="dato-perfil-col-2">
+                            <span id="us-peso-a"></span><span class="estatura-unidad">kg</span>
+                        </div>
+                    </div>
+                    <div class="caja-datos-perfil">
+                        <span class="dato-id">peso meta</span>
+                        <div class="dato-perfil-col-2">
+                            <span id="us-peso-m"></span><span class="estatura-unidad">kg</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section class="sct-calculos">
-
-            <div class="resultado-box">
-                <span class="dato-id">IMC</span>
-                <span id="us-imc"></span>
-            </div>
-            <div class="resultado-box">
-                <span class="dato-id">Clasificación</span>
-                <span id="us-imc-cat"></span>
-            </div>
-
-        </section>
-        <section class="sct-foto-perfil">
-            <div class="img-input">
-                <img src="/img/foto-perfil.png" alt="Foto Perfil">
-            </div>
-
-        </section>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/servicios-generales.js"></script>
+    <script src="/js/servicio-general.js"></script>
     <script src="/js/usuario.js"></script>
 </body>
 

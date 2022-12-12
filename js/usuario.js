@@ -69,7 +69,7 @@ const mostrarDatos = async() => {
     pApellido.innerHTML = datosUsuario[datosUsuario.length - 1].apellido;
     pNacimiento.innerHTML = fechaNacimiento.slice(0, 10)
     pEdad.innerHTML = calcularEdad(datosUsuario[datosUsuario.length - 1].nacimiento);
-    pEstatura.innerHTML = datosUsuario[datosUsuario.length - 1].estatura;
+    pEstatura.innerHTML = datosUsuario[datosUsuario.length - 1].estatura.toFixed(2);
     pSexo.innerHTML = datosUsuario[datosUsuario.length - 1].sexo;
     pCorreo.innerHTML = datosUsuario[datosUsuario.length - 1].correo;
     pPesoActual.innerHTML = datosUsuario[datosUsuario.length - 1].pesoActual;

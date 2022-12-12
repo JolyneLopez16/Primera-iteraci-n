@@ -9,14 +9,11 @@ const abrirNav = () => {
     }
 };
 
-const mascOption = document.getElementById('opt-masc');
+
 const genderSelect = document.getElementById('txt-sexo')
 
 const cambiarSelectSize = () => {
-
-    if (mascOption.selected == 'true') {
-        genderSelect.style.cssText += 'width: 100px';
-    }
+    genderSelect.style.cssText += 'width: 100px';
 }
 
-cambiarSelectSize();
+genderSelect.addEventListener('change', cambiarSelectSize)

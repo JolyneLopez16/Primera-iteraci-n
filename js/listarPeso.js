@@ -4,10 +4,12 @@ let listaPesos = [];
 
 const mostrarTabla = () => {
     cuerpoTabla.innerHTML = '';
+
     listaPesos.forEach(peso => {
+        let fecha = peso.fecha;
         let fila = cuerpoTabla.insertRow();
         fila.insertCell().innerText = peso.peso;
-        fila.insertCell().innerText = peso.fecha;
+        fila.insertCell().innerText = fecha.substring(0, 15);
 
     });
 };
