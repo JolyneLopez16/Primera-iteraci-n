@@ -18,3 +18,30 @@ const cargarLista = async() => {
 };
 
 cargarLista();
+
+/*let tipoObjetivo = tipo.filter(tipo =>{
+    console.log();
+});
+
+let tipo = [
+    {
+        tipo: "Reducción de peso"
+    },
+    {
+        tipo: "Aumento de peso"
+    },
+    {
+        tipo: "Reducción del IMC"
+    },
+    {
+        tipo: "Aumento del IMC"
+    },
+    {
+        tipo: "Acumulación de horas de ayuno"
+    },
+    {
+        tipo: "Cantidad de días de ayuno finalizados"
+    }
+]
+
+let approived = tipoObjetivo.filter(tipo => student.score >= 11);*/

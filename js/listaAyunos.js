@@ -10,6 +10,7 @@ const mostrarTabla = () => {
         let fila = cuerpoTabla.insertRow();
         fila.insertCell().innerText = ayuno.plan;
         fila.insertCell().innerText = fecha.toLocaleDateString('es');
+        fila.insertCell().innerText = ayuno.horasDeAyuno;
 
 
 

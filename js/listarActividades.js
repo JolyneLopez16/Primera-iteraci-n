@@ -9,7 +9,7 @@ const mostrarTabla = () => {
         let fila = cuerpoTabla.insertRow();
         fila.insertCell().innerText = actividad.tipo;
         fila.insertCell().innerText = fecha.toLocaleDateString('es');
-        fila.insertCell().innerText = actividad.inicio;
+        fila.insertCell().innerText = actividad.horas;
 
     });
 };
@@ -21,14 +21,14 @@ const cargarLista = async() => {
 
 cargarLista();
 
-/*const crearGrafico = (arrActividades, arrFechas) => {
+const crearGrafico = (arrActividades, arrFechas) => {
     let contexto = document.getElementById('grafico-actividad').getContext('2d');
     let grafico = new Chart(contexto, {
-        type: 'polarArea',
+        type: 'bar',
         data: {
             labels: arrFechas,
             datasets: [{
-                label: 'Actividades',
+                label: 'Horas de actividad realizadas',
                 data: arrActividades,
                 backgroundColor: [
                     '#005241'
@@ -44,11 +44,13 @@ const obtenerActividades = async() => {
     let arrActividades = [];
 
 
+
     listaActividades.forEach(actividad => {
         arrFechas.push(moment(actividad.fecha).add(1, 'days').format('MM-DD-YYYY'));
-        arrActividades.push(actividad.tipo);
+        arrActividades.push(actividad.horas);
+
     });
     crearGrafico(arrActividades, arrFechas);
 };
 
-obtenerActividades();*/
+obtenerActividades();
