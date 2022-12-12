@@ -9,6 +9,9 @@ const mostrarTabla = () => {
         fila.insertCell().innerText = receta.nombre;
         fila.insertCell().innerText = receta.tipo;
         fila.insertCell().innerText = receta.categoria;
+        fila.insertCell().innerText = receta.ingredientes;
+        fila.insertCell().innerText = receta.pasos;
+
 
 
     });
