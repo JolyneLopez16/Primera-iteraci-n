@@ -192,3 +192,7 @@ label {
     border-radius: 6px;
     margin-right: 2%;
 }
+
+#btn-busq {
+    height: 30px;
+}
