@@ -25,7 +25,7 @@ const validar = async() => {
         let tipoActividad = {
             'nombre': inNombre.value,
         };
-        registrarDatos('registrar-tipoActividad', tipoActividad, "#");
+        registrarDatos('registrar-tipo-actividad', tipoActividad, "#");
 
     }
 }
