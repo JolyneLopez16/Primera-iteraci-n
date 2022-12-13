@@ -51,7 +51,7 @@ const obtenerAyuno = async() => {
 
     listaAyunos.forEach(ayuno => {
         arrFechas.push(moment(ayuno.fecha).add(1, 'days').format('MM-DD-YYYY'));
-        arrAyunos.push(ayuno.plan);
+        arrAyunos.push(ayuno.horasDeAyuno);
     });
     crearGrafico(arrAyunos, arrFechas);
 };
