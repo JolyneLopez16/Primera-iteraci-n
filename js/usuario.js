@@ -12,7 +12,6 @@ const pPesoMeta = document.querySelector('#us-peso-m');
 const pIMC = document.querySelector('#us-imc');
 const pIMCCat = document.querySelector('#us-imc-cat');
 
-
 const calcularIMC = (peso, estatura) => {
     let imc = peso / Math.pow(estatura, 2);
 
@@ -58,7 +57,9 @@ let datosUsuario = [];
 const inicializarLista = async() => {
     datosUsuario = await obtenerListaDatos('/obtener-usuario');
     mostrarDatos();
+    seleccionarImagen()
 };
+
 
 const mostrarDatos = async() => {
     let imc = calcularIMC(datosUsuario[datosUsuario.length - 1].pesoActual, datosUsuario[datosUsuario.length - 1].estatura);
